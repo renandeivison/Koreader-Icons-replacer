@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<!--
+KOReader Icon Customizer
+Copyright (C) 2026 renandeivison
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, version 3 of the License. It is distributed WITHOUT ANY WARRANTY.
+See "Credits and licenses" inside the page for the full license text and for
+the notices of the third-party icons it embeds.
+-->
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
@@ -91,9 +101,11 @@ label.pick input{display:none}
 <div class="tabs" role="tablist">
 <button role="tab" id="t-ko" aria-selected="true" data-tab="ko">KOReader <span class="badge" hidden></span></button>
 <button role="tab" id="t-sui" aria-selected="false" data-tab="sui">SimpleUI <span class="badge" hidden></span></button>
+<button role="tab" id="t-zen" aria-selected="false" data-tab="zen">ZenOS <span class="badge" hidden></span></button>
 </div>
 <div class="chips" id="nav-ko"></div>
 <div class="chips" id="nav-sui" hidden></div>
+<div class="chips" id="nav-zen" hidden></div>
 </div></div>
 <main class="wrap">
 <div id="pane-ko">
@@ -107,6 +119,12 @@ label.pick input{display:none}
 <ol><li><b data-i="s1t"></b><span data-i="s1b"></span></li><li><b data-i="s2t"></b><span data-i="s2b"></span></li><li><b data-i="s3t"></b><span data-i="s3b"></span></li></ol>
 <p class="note" data-i="snote"></p></div>
 <div id="sec-sui"></div>
+</div>
+<div id="pane-zen" hidden>
+<div class="how"><h3><span data-i="how"></span><label class="pn"><span data-i="packname"></span> <input id="zpackname" value="My Pack" maxlength="40"></label></h3>
+<ol><li><b data-i="z1t"></b><span data-i="z1b"></span></li><li><b data-i="z2t"></b><span data-i="z2b"></span></li><li><b data-i="z3t"></b><span data-i="z3b"></span></li></ol>
+<p class="note" data-i="znote"></p></div>
+<div id="sec-zen"></div>
 </div>
 <footer class="credits"><span data-i="creditsNote"></span> <a href="#" id="lic-link" data-i="creditsLink"></a></footer>
 <script type="text/plain" id="lic-src"><!DOCTYPE html>
@@ -124,29 +142,683 @@ pre{white-space:pre-wrap;font:.8rem/1.5 ui-monospace,Menlo,Consolas,monospace;pa
 </style></head><body><main>
 <h1>Credits and licenses</h1>
 <p>KOReader Icon Customizer is an unofficial community tool, not affiliated with KOReader or SimpleUI. It embeds icons from the projects below, which keep their own licenses, reproduced here as required.</p>
-<h2>KOReader Icon Customizer</h2>
-<p>The interface, logic and translations of this tool (everything except the embedded icons below) are released under the MIT License.</p>
-<pre>MIT License
+<h2>This tool and the ZenOS icons: GPL-3.0</h2>
+<p>KOReader Icon Customizer, Copyright (C) 2026 renandeivison, is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3 of the License. It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY, without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p>
+<p>The ZenOS tab embeds 22 icons (Home, Library, Navbar tabs and lookup actions) from <a href="https://github.com/xZenLabs/zen-os">ZenOS</a>, whose repository declares the GPL-3.0 license for them. Some of these files carry SVG Repo (www.svgrepo.com) origin marks and may also be subject to their original authors' licenses. Because of the GPL-3.0, this page as a whole is distributed under the GPL-3.0. The HTML file is its own source code.</p>
+<pre>GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
 
-Copyright (c) 2026 renandeivison
+ Copyright (C) 2007 Free Software Foundation, Inc. &lt;https://fsf.org/&gt;
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the &quot;Software&quot;), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+                            Preamble
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+  The GNU General Public License is a free, copyleft license for
+software and other kinds of works.
 
-THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.</pre>
+  The licenses for most software and other practical works are designed
+to take away your freedom to share and change the works.  By contrast,
+the GNU General Public License is intended to guarantee your freedom to
+share and change all versions of a program--to make sure it remains free
+software for all its users.  We, the Free Software Foundation, use the
+GNU General Public License for most of our software; it applies also to
+any other work released this way by its authors.  You can apply it to
+your programs, too.
+
+  When we speak of free software, we are referring to freedom, not
+price.  Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+them if you wish), that you receive source code or can get it if you
+want it, that you can change the software or use pieces of it in new
+free programs, and that you know you can do these things.
+
+  To protect your rights, we need to prevent others from denying you
+these rights or asking you to surrender the rights.  Therefore, you have
+certain responsibilities if you distribute copies of the software, or if
+you modify it: responsibilities to respect the freedom of others.
+
+  For example, if you distribute copies of such a program, whether
+gratis or for a fee, you must pass on to the recipients the same
+freedoms that you received.  You must make sure that they, too, receive
+or can get the source code.  And you must show them these terms so they
+know their rights.
+
+  Developers that use the GNU GPL protect your rights with two steps:
+(1) assert copyright on the software, and (2) offer you this License
+giving you legal permission to copy, distribute and/or modify it.
+
+  For the developers&#x27; and authors&#x27; protection, the GPL clearly explains
+that there is no warranty for this free software.  For both users&#x27; and
+authors&#x27; sake, the GPL requires that modified versions be marked as
+changed, so that their problems will not be attributed erroneously to
+authors of previous versions.
+
+  Some devices are designed to deny users access to install or run
+modified versions of the software inside them, although the manufacturer
+can do so.  This is fundamentally incompatible with the aim of
+protecting users&#x27; freedom to change the software.  The systematic
+pattern of such abuse occurs in the area of products for individuals to
+use, which is precisely where it is most unacceptable.  Therefore, we
+have designed this version of the GPL to prohibit the practice for those
+products.  If such problems arise substantially in other domains, we
+stand ready to extend this provision to those domains in future versions
+of the GPL, as needed to protect the freedom of users.
+
+  Finally, every program is threatened constantly by software patents.
+States should not allow patents to restrict development and use of
+software on general-purpose computers, but in those that do, we wish to
+avoid the special danger that patents applied to a free program could
+make it effectively proprietary.  To prevent this, the GPL assures that
+patents cannot be used to render the program non-free.
+
+  The precise terms and conditions for copying, distribution and
+modification follow.
+
+                       TERMS AND CONDITIONS
+
+  0. Definitions.
+
+  &quot;This License&quot; refers to version 3 of the GNU General Public License.
+
+  &quot;Copyright&quot; also means copyright-like laws that apply to other kinds of
+works, such as semiconductor masks.
+
+  &quot;The Program&quot; refers to any copyrightable work licensed under this
+License.  Each licensee is addressed as &quot;you&quot;.  &quot;Licensees&quot; and
+&quot;recipients&quot; may be individuals or organizations.
+
+  To &quot;modify&quot; a work means to copy from or adapt all or part of the work
+in a fashion requiring copyright permission, other than the making of an
+exact copy.  The resulting work is called a &quot;modified version&quot; of the
+earlier work or a work &quot;based on&quot; the earlier work.
+
+  A &quot;covered work&quot; means either the unmodified Program or a work based
+on the Program.
+
+  To &quot;propagate&quot; a work means to do anything with it that, without
+permission, would make you directly or secondarily liable for
+infringement under applicable copyright law, except executing it on a
+computer or modifying a private copy.  Propagation includes copying,
+distribution (with or without modification), making available to the
+public, and in some countries other activities as well.
+
+  To &quot;convey&quot; a work means any kind of propagation that enables other
+parties to make or receive copies.  Mere interaction with a user through
+a computer network, with no transfer of a copy, is not conveying.
+
+  An interactive user interface displays &quot;Appropriate Legal Notices&quot;
+to the extent that it includes a convenient and prominently visible
+feature that (1) displays an appropriate copyright notice, and (2)
+tells the user that there is no warranty for the work (except to the
+extent that warranties are provided), that licensees may convey the
+work under this License, and how to view a copy of this License.  If
+the interface presents a list of user commands or options, such as a
+menu, a prominent item in the list meets this criterion.
+
+  1. Source Code.
+
+  The &quot;source code&quot; for a work means the preferred form of the work
+for making modifications to it.  &quot;Object code&quot; means any non-source
+form of a work.
+
+  A &quot;Standard Interface&quot; means an interface that either is an official
+standard defined by a recognized standards body, or, in the case of
+interfaces specified for a particular programming language, one that
+is widely used among developers working in that language.
+
+  The &quot;System Libraries&quot; of an executable work include anything, other
+than the work as a whole, that (a) is included in the normal form of
+packaging a Major Component, but which is not part of that Major
+Component, and (b) serves only to enable use of the work with that
+Major Component, or to implement a Standard Interface for which an
+implementation is available to the public in source code form.  A
+&quot;Major Component&quot;, in this context, means a major essential component
+(kernel, window system, and so on) of the specific operating system
+(if any) on which the executable work runs, or a compiler used to
+produce the work, or an object code interpreter used to run it.
+
+  The &quot;Corresponding Source&quot; for a work in object code form means all
+the source code needed to generate, install, and (for an executable
+work) run the object code and to modify the work, including scripts to
+control those activities.  However, it does not include the work&#x27;s
+System Libraries, or general-purpose tools or generally available free
+programs which are used unmodified in performing those activities but
+which are not part of the work.  For example, Corresponding Source
+includes interface definition files associated with source files for
+the work, and the source code for shared libraries and dynamically
+linked subprograms that the work is specifically designed to require,
+such as by intimate data communication or control flow between those
+subprograms and other parts of the work.
+
+  The Corresponding Source need not include anything that users
+can regenerate automatically from other parts of the Corresponding
+Source.
+
+  The Corresponding Source for a work in source code form is that
+same work.
+
+  2. Basic Permissions.
+
+  All rights granted under this License are granted for the term of
+copyright on the Program, and are irrevocable provided the stated
+conditions are met.  This License explicitly affirms your unlimited
+permission to run the unmodified Program.  The output from running a
+covered work is covered by this License only if the output, given its
+content, constitutes a covered work.  This License acknowledges your
+rights of fair use or other equivalent, as provided by copyright law.
+
+  You may make, run and propagate covered works that you do not
+convey, without conditions so long as your license otherwise remains
+in force.  You may convey covered works to others for the sole purpose
+of having them make modifications exclusively for you, or provide you
+with facilities for running those works, provided that you comply with
+the terms of this License in conveying all material for which you do
+not control copyright.  Those thus making or running the covered works
+for you must do so exclusively on your behalf, under your direction
+and control, on terms that prohibit them from making any copies of
+your copyrighted material outside their relationship with you.
+
+  Conveying under any other circumstances is permitted solely under
+the conditions stated below.  Sublicensing is not allowed; section 10
+makes it unnecessary.
+
+  3. Protecting Users&#x27; Legal Rights From Anti-Circumvention Law.
+
+  No covered work shall be deemed part of an effective technological
+measure under any applicable law fulfilling obligations under article
+11 of the WIPO copyright treaty adopted on 20 December 1996, or
+similar laws prohibiting or restricting circumvention of such
+measures.
+
+  When you convey a covered work, you waive any legal power to forbid
+circumvention of technological measures to the extent such circumvention
+is effected by exercising rights under this License with respect to
+the covered work, and you disclaim any intention to limit operation or
+modification of the work as a means of enforcing, against the work&#x27;s
+users, your or third parties&#x27; legal rights to forbid circumvention of
+technological measures.
+
+  4. Conveying Verbatim Copies.
+
+  You may convey verbatim copies of the Program&#x27;s source code as you
+receive it, in any medium, provided that you conspicuously and
+appropriately publish on each copy an appropriate copyright notice;
+keep intact all notices stating that this License and any
+non-permissive terms added in accord with section 7 apply to the code;
+keep intact all notices of the absence of any warranty; and give all
+recipients a copy of this License along with the Program.
+
+  You may charge any price or no price for each copy that you convey,
+and you may offer support or warranty protection for a fee.
+
+  5. Conveying Modified Source Versions.
+
+  You may convey a work based on the Program, or the modifications to
+produce it from the Program, in the form of source code under the
+terms of section 4, provided that you also meet all of these conditions:
+
+    a) The work must carry prominent notices stating that you modified
+    it, and giving a relevant date.
+
+    b) The work must carry prominent notices stating that it is
+    released under this License and any conditions added under section
+    7.  This requirement modifies the requirement in section 4 to
+    &quot;keep intact all notices&quot;.
+
+    c) You must license the entire work, as a whole, under this
+    License to anyone who comes into possession of a copy.  This
+    License will therefore apply, along with any applicable section 7
+    additional terms, to the whole of the work, and all its parts,
+    regardless of how they are packaged.  This License gives no
+    permission to license the work in any other way, but it does not
+    invalidate such permission if you have separately received it.
+
+    d) If the work has interactive user interfaces, each must display
+    Appropriate Legal Notices; however, if the Program has interactive
+    interfaces that do not display Appropriate Legal Notices, your
+    work need not make them do so.
+
+  A compilation of a covered work with other separate and independent
+works, which are not by their nature extensions of the covered work,
+and which are not combined with it such as to form a larger program,
+in or on a volume of a storage or distribution medium, is called an
+&quot;aggregate&quot; if the compilation and its resulting copyright are not
+used to limit the access or legal rights of the compilation&#x27;s users
+beyond what the individual works permit.  Inclusion of a covered work
+in an aggregate does not cause this License to apply to the other
+parts of the aggregate.
+
+  6. Conveying Non-Source Forms.
+
+  You may convey a covered work in object code form under the terms
+of sections 4 and 5, provided that you also convey the
+machine-readable Corresponding Source under the terms of this License,
+in one of these ways:
+
+    a) Convey the object code in, or embodied in, a physical product
+    (including a physical distribution medium), accompanied by the
+    Corresponding Source fixed on a durable physical medium
+    customarily used for software interchange.
+
+    b) Convey the object code in, or embodied in, a physical product
+    (including a physical distribution medium), accompanied by a
+    written offer, valid for at least three years and valid for as
+    long as you offer spare parts or customer support for that product
+    model, to give anyone who possesses the object code either (1) a
+    copy of the Corresponding Source for all the software in the
+    product that is covered by this License, on a durable physical
+    medium customarily used for software interchange, for a price no
+    more than your reasonable cost of physically performing this
+    conveying of source, or (2) access to copy the
+    Corresponding Source from a network server at no charge.
+
+    c) Convey individual copies of the object code with a copy of the
+    written offer to provide the Corresponding Source.  This
+    alternative is allowed only occasionally and noncommercially, and
+    only if you received the object code with such an offer, in accord
+    with subsection 6b.
+
+    d) Convey the object code by offering access from a designated
+    place (gratis or for a charge), and offer equivalent access to the
+    Corresponding Source in the same way through the same place at no
+    further charge.  You need not require recipients to copy the
+    Corresponding Source along with the object code.  If the place to
+    copy the object code is a network server, the Corresponding Source
+    may be on a different server (operated by you or a third party)
+    that supports equivalent copying facilities, provided you maintain
+    clear directions next to the object code saying where to find the
+    Corresponding Source.  Regardless of what server hosts the
+    Corresponding Source, you remain obligated to ensure that it is
+    available for as long as needed to satisfy these requirements.
+
+    e) Convey the object code using peer-to-peer transmission, provided
+    you inform other peers where the object code and Corresponding
+    Source of the work are being offered to the general public at no
+    charge under subsection 6d.
+
+  A separable portion of the object code, whose source code is excluded
+from the Corresponding Source as a System Library, need not be
+included in conveying the object code work.
+
+  A &quot;User Product&quot; is either (1) a &quot;consumer product&quot;, which means any
+tangible personal property which is normally used for personal, family,
+or household purposes, or (2) anything designed or sold for incorporation
+into a dwelling.  In determining whether a product is a consumer product,
+doubtful cases shall be resolved in favor of coverage.  For a particular
+product received by a particular user, &quot;normally used&quot; refers to a
+typical or common use of that class of product, regardless of the status
+of the particular user or of the way in which the particular user
+actually uses, or expects or is expected to use, the product.  A product
+is a consumer product regardless of whether the product has substantial
+commercial, industrial or non-consumer uses, unless such uses represent
+the only significant mode of use of the product.
+
+  &quot;Installation Information&quot; for a User Product means any methods,
+procedures, authorization keys, or other information required to install
+and execute modified versions of a covered work in that User Product from
+a modified version of its Corresponding Source.  The information must
+suffice to ensure that the continued functioning of the modified object
+code is in no case prevented or interfered with solely because
+modification has been made.
+
+  If you convey an object code work under this section in, or with, or
+specifically for use in, a User Product, and the conveying occurs as
+part of a transaction in which the right of possession and use of the
+User Product is transferred to the recipient in perpetuity or for a
+fixed term (regardless of how the transaction is characterized), the
+Corresponding Source conveyed under this section must be accompanied
+by the Installation Information.  But this requirement does not apply
+if neither you nor any third party retains the ability to install
+modified object code on the User Product (for example, the work has
+been installed in ROM).
+
+  The requirement to provide Installation Information does not include a
+requirement to continue to provide support service, warranty, or updates
+for a work that has been modified or installed by the recipient, or for
+the User Product in which it has been modified or installed.  Access to a
+network may be denied when the modification itself materially and
+adversely affects the operation of the network or violates the rules and
+protocols for communication across the network.
+
+  Corresponding Source conveyed, and Installation Information provided,
+in accord with this section must be in a format that is publicly
+documented (and with an implementation available to the public in
+source code form), and must require no special password or key for
+unpacking, reading or copying.
+
+  7. Additional Terms.
+
+  &quot;Additional permissions&quot; are terms that supplement the terms of this
+License by making exceptions from one or more of its conditions.
+Additional permissions that are applicable to the entire Program shall
+be treated as though they were included in this License, to the extent
+that they are valid under applicable law.  If additional permissions
+apply only to part of the Program, that part may be used separately
+under those permissions, but the entire Program remains governed by
+this License without regard to the additional permissions.
+
+  When you convey a copy of a covered work, you may at your option
+remove any additional permissions from that copy, or from any part of
+it.  (Additional permissions may be written to require their own
+removal in certain cases when you modify the work.)  You may place
+additional permissions on material, added by you to a covered work,
+for which you have or can give appropriate copyright permission.
+
+  Notwithstanding any other provision of this License, for material you
+add to a covered work, you may (if authorized by the copyright holders of
+that material) supplement the terms of this License with terms:
+
+    a) Disclaiming warranty or limiting liability differently from the
+    terms of sections 15 and 16 of this License; or
+
+    b) Requiring preservation of specified reasonable legal notices or
+    author attributions in that material or in the Appropriate Legal
+    Notices displayed by works containing it; or
+
+    c) Prohibiting misrepresentation of the origin of that material, or
+    requiring that modified versions of such material be marked in
+    reasonable ways as different from the original version; or
+
+    d) Limiting the use for publicity purposes of names of licensors or
+    authors of the material; or
+
+    e) Declining to grant rights under trademark law for use of some
+    trade names, trademarks, or service marks; or
+
+    f) Requiring indemnification of licensors and authors of that
+    material by anyone who conveys the material (or modified versions of
+    it) with contractual assumptions of liability to the recipient, for
+    any liability that these contractual assumptions directly impose on
+    those licensors and authors.
+
+  All other non-permissive additional terms are considered &quot;further
+restrictions&quot; within the meaning of section 10.  If the Program as you
+received it, or any part of it, contains a notice stating that it is
+governed by this License along with a term that is a further
+restriction, you may remove that term.  If a license document contains
+a further restriction but permits relicensing or conveying under this
+License, you may add to a covered work material governed by the terms
+of that license document, provided that the further restriction does
+not survive such relicensing or conveying.
+
+  If you add terms to a covered work in accord with this section, you
+must place, in the relevant source files, a statement of the
+additional terms that apply to those files, or a notice indicating
+where to find the applicable terms.
+
+  Additional terms, permissive or non-permissive, may be stated in the
+form of a separately written license, or stated as exceptions;
+the above requirements apply either way.
+
+  8. Termination.
+
+  You may not propagate or modify a covered work except as expressly
+provided under this License.  Any attempt otherwise to propagate or
+modify it is void, and will automatically terminate your rights under
+this License (including any patent licenses granted under the third
+paragraph of section 11).
+
+  However, if you cease all violation of this License, then your
+license from a particular copyright holder is reinstated (a)
+provisionally, unless and until the copyright holder explicitly and
+finally terminates your license, and (b) permanently, if the copyright
+holder fails to notify you of the violation by some reasonable means
+prior to 60 days after the cessation.
+
+  Moreover, your license from a particular copyright holder is
+reinstated permanently if the copyright holder notifies you of the
+violation by some reasonable means, this is the first time you have
+received notice of violation of this License (for any work) from that
+copyright holder, and you cure the violation prior to 30 days after
+your receipt of the notice.
+
+  Termination of your rights under this section does not terminate the
+licenses of parties who have received copies or rights from you under
+this License.  If your rights have been terminated and not permanently
+reinstated, you do not qualify to receive new licenses for the same
+material under section 10.
+
+  9. Acceptance Not Required for Having Copies.
+
+  You are not required to accept this License in order to receive or
+run a copy of the Program.  Ancillary propagation of a covered work
+occurring solely as a consequence of using peer-to-peer transmission
+to receive a copy likewise does not require acceptance.  However,
+nothing other than this License grants you permission to propagate or
+modify any covered work.  These actions infringe copyright if you do
+not accept this License.  Therefore, by modifying or propagating a
+covered work, you indicate your acceptance of this License to do so.
+
+  10. Automatic Licensing of Downstream Recipients.
+
+  Each time you convey a covered work, the recipient automatically
+receives a license from the original licensors, to run, modify and
+propagate that work, subject to this License.  You are not responsible
+for enforcing compliance by third parties with this License.
+
+  An &quot;entity transaction&quot; is a transaction transferring control of an
+organization, or substantially all assets of one, or subdividing an
+organization, or merging organizations.  If propagation of a covered
+work results from an entity transaction, each party to that
+transaction who receives a copy of the work also receives whatever
+licenses to the work the party&#x27;s predecessor in interest had or could
+give under the previous paragraph, plus a right to possession of the
+Corresponding Source of the work from the predecessor in interest, if
+the predecessor has it or can get it with reasonable efforts.
+
+  You may not impose any further restrictions on the exercise of the
+rights granted or affirmed under this License.  For example, you may
+not impose a license fee, royalty, or other charge for exercise of
+rights granted under this License, and you may not initiate litigation
+(including a cross-claim or counterclaim in a lawsuit) alleging that
+any patent claim is infringed by making, using, selling, offering for
+sale, or importing the Program or any portion of it.
+
+  11. Patents.
+
+  A &quot;contributor&quot; is a copyright holder who authorizes use under this
+License of the Program or a work on which the Program is based.  The
+work thus licensed is called the contributor&#x27;s &quot;contributor version&quot;.
+
+  A contributor&#x27;s &quot;essential patent claims&quot; are all patent claims
+owned or controlled by the contributor, whether already acquired or
+hereafter acquired, that would be infringed by some manner, permitted
+by this License, of making, using, or selling its contributor version,
+but do not include claims that would be infringed only as a
+consequence of further modification of the contributor version.  For
+purposes of this definition, &quot;control&quot; includes the right to grant
+patent sublicenses in a manner consistent with the requirements of
+this License.
+
+  Each contributor grants you a non-exclusive, worldwide, royalty-free
+patent license under the contributor&#x27;s essential patent claims, to
+make, use, sell, offer for sale, import and otherwise run, modify and
+propagate the contents of its contributor version.
+
+  In the following three paragraphs, a &quot;patent license&quot; is any express
+agreement or commitment, however denominated, not to enforce a patent
+(such as an express permission to practice a patent or covenant not to
+sue for patent infringement).  To &quot;grant&quot; such a patent license to a
+party means to make such an agreement or commitment not to enforce a
+patent against the party.
+
+  If you convey a covered work, knowingly relying on a patent license,
+and the Corresponding Source of the work is not available for anyone
+to copy, free of charge and under the terms of this License, through a
+publicly available network server or other readily accessible means,
+then you must either (1) cause the Corresponding Source to be so
+available, or (2) arrange to deprive yourself of the benefit of the
+patent license for this particular work, or (3) arrange, in a manner
+consistent with the requirements of this License, to extend the patent
+license to downstream recipients.  &quot;Knowingly relying&quot; means you have
+actual knowledge that, but for the patent license, your conveying the
+covered work in a country, or your recipient&#x27;s use of the covered work
+in a country, would infringe one or more identifiable patents in that
+country that you have reason to believe are valid.
+
+  If, pursuant to or in connection with a single transaction or
+arrangement, you convey, or propagate by procuring conveyance of, a
+covered work, and grant a patent license to some of the parties
+receiving the covered work authorizing them to use, propagate, modify
+or convey a specific copy of the covered work, then the patent license
+you grant is automatically extended to all recipients of the covered
+work and works based on it.
+
+  A patent license is &quot;discriminatory&quot; if it does not include within
+the scope of its coverage, prohibits the exercise of, or is
+conditioned on the non-exercise of one or more of the rights that are
+specifically granted under this License.  You may not convey a covered
+work if you are a party to an arrangement with a third party that is
+in the business of distributing software, under which you make payment
+to the third party based on the extent of your activity of conveying
+the work, and under which the third party grants, to any of the
+parties who would receive the covered work from you, a discriminatory
+patent license (a) in connection with copies of the covered work
+conveyed by you (or copies made from those copies), or (b) primarily
+for and in connection with specific products or compilations that
+contain the covered work, unless you entered into that arrangement,
+or that patent license was granted, prior to 28 March 2007.
+
+  Nothing in this License shall be construed as excluding or limiting
+any implied license or other defenses to infringement that may
+otherwise be available to you under applicable patent law.
+
+  12. No Surrender of Others&#x27; Freedom.
+
+  If conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot convey a
+covered work so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you may
+not convey it at all.  For example, if you agree to terms that obligate you
+to collect a royalty for further conveying from those to whom you convey
+the Program, the only way you could satisfy both those terms and this
+License would be to refrain entirely from conveying the Program.
+
+  13. Use with the GNU Affero General Public License.
+
+  Notwithstanding any other provision of this License, you have
+permission to link or combine any covered work with a work licensed
+under version 3 of the GNU Affero General Public License into a single
+combined work, and to convey the resulting work.  The terms of this
+License will continue to apply to the part which is the covered work,
+but the special requirements of the GNU Affero General Public License,
+section 13, concerning interaction through a network will apply to the
+combination as such.
+
+  14. Revised Versions of this License.
+
+  The Free Software Foundation may publish revised and/or new versions of
+the GNU General Public License from time to time.  Such new versions will
+be similar in spirit to the present version, but may differ in detail to
+address new problems or concerns.
+
+  Each version is given a distinguishing version number.  If the
+Program specifies that a certain numbered version of the GNU General
+Public License &quot;or any later version&quot; applies to it, you have the
+option of following the terms and conditions either of that numbered
+version or of any later version published by the Free Software
+Foundation.  If the Program does not specify a version number of the
+GNU General Public License, you may choose any version ever published
+by the Free Software Foundation.
+
+  If the Program specifies that a proxy can decide which future
+versions of the GNU General Public License can be used, that proxy&#x27;s
+public statement of acceptance of a version permanently authorizes you
+to choose that version for the Program.
+
+  Later license versions may give you additional or different
+permissions.  However, no additional obligations are imposed on any
+author or copyright holder as a result of your choosing to follow a
+later version.
+
+  15. Disclaimer of Warranty.
+
+  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
+APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM &quot;AS IS&quot; WITHOUT WARRANTY
+OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF
+ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+  16. Limitation of Liability.
+
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
+THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+  17. Interpretation of Sections 15 and 16.
+
+  If the disclaimer of warranty and limitation of liability provided
+above cannot be given local legal effect according to their terms,
+reviewing courts shall apply local law that most closely approximates
+an absolute waiver of all civil liability in connection with the
+Program, unless a warranty or assumption of liability accompanies a
+copy of the Program in return for a fee.
+
+                     END OF TERMS AND CONDITIONS
+
+            How to Apply These Terms to Your New Programs
+
+  If you develop a new program, and you want it to be of the greatest
+possible use to the public, the best way to achieve this is to make it
+free software which everyone can redistribute and change under these terms.
+
+  To do so, attach the following notices to the program.  It is safest
+to attach them to the start of each source file to most effectively
+state the exclusion of warranty; and each file should have at least
+the &quot;copyright&quot; line and a pointer to where the full notice is found.
+
+    &lt;one line to give the program&#x27;s name and a brief idea of what it does.&gt;
+    Copyright (C) &lt;year&gt;  &lt;name of author&gt;
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
+
+Also add information on how to contact you by electronic and paper mail.
+
+  If the program does terminal interaction, make it output a short
+notice like this when it starts in an interactive mode:
+
+    &lt;program&gt;  Copyright (C) &lt;year&gt;  &lt;name of author&gt;
+    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w&#x27;.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c&#x27; for details.
+
+The hypothetical commands `show w&#x27; and `show c&#x27; should show the appropriate
+parts of the General Public License.  Of course, your program&#x27;s commands
+might be different; for a GUI interface, you would use an &quot;about box&quot;.
+
+  You should also get your employer (if you work as a programmer) or school,
+if any, to sign a &quot;copyright disclaimer&quot; for the program, if necessary.
+For more information on this, and how to apply and follow the GNU GPL, see
+&lt;https://www.gnu.org/licenses/&gt;.
+
+  The GNU General Public License does not permit incorporating your program
+into proprietary programs.  If your program is a subroutine library, you
+may consider it more useful to permit linking proprietary applications with
+the library.  If this is what you want to do, use the GNU Lesser General
+Public License instead of this License.  But first, please read
+&lt;https://www.gnu.org/licenses/why-not-lgpl.html&gt;.</pre>
 <h2>KOReader icons</h2>
 <p>From <a href="https://github.com/koreader/koreader">KOReader</a> (resources/icons/mdlight): Material Design Icons Light, licensed under the SIL Open Font License 1.1.</p>
 <pre>Copyright (c) 2015-2017, Austin Andrews (https://materialdesignicons.com),
@@ -297,14 +969,17 @@ if(rest.length)SECTIONS.push(["Outros",". ",rest]);
 const svgUrl=t=>"data:image/svg+xml;charset=utf-8,"+encodeURIComponent(t);
 const chosen={}; // nome -> {ext, bytes, url}
 const $=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e};
-const UI = {"en": {"name": "English", "title": "KOReader Icon Customizer", "lede": "Swap the icons of the KOReader interface (Kindle 2026.07.1) and of the SimpleUI plugin. Pick an SVG or PNG file for each icon; anything you don't touch stays as it is.", "language": "Language", "how": "How to apply", "packname": "Pack name", "k1t": "Generate the zip", "k1b": "Pick your icons and tap Generate zip. Extract it on your computer: you get the <b>koreader/icons</b> folder.", "k2t": "Copy to the Kindle", "k2b": "Over USB, copy the <b>icons</b> folder into the <b>koreader</b> folder on the device, merging with the existing one.", "k3t": "Restart KOReader", "k3b": "Menu → Exit, then open it again.", "knote": "To go back to the original, delete the icon file from koreader/icons, or download the default pack and copy it over (confirm the replacement).", "s1t": "Generate the pack", "s1b": "Name it, pick your icons and tap Generate pack.", "s2t": "Copy to the Kindle", "s2b": "Put the .zip, without extracting it, in any folder on the device.", "s3t": "Install in SimpleUI", "s3b": "Style → Icons → Icon Packs → Install pack from ZIP…, choose the file and tap the pack. It applies instantly.", "snote": "Alternative: extract the zip into koreader/settings/simpleui/sui_icons/packs/. To go back to the default, use Style → Icons → System Icons → Reset All System Icons in SimpleUI. The default pack downloaded here only covers icons with a preview.", "none": "No icons changed", "one": "1 icon changed", "many": "{n} icons changed", "clear": "Clear", "defpack": "Download default pack", "genKo": "Generate zip", "genSui": "Generate pack", "choose": "Choose", "remove": "Remove", "totOne": "1 icon", "totMany": "{n} icons", "chOne": "1 changed", "chMany": "{n} changed", "badfile": "Use an .svg or .png file", "creditsNote": "Unofficial community tool. Icons by KOReader (SIL OFL 1.1) and SimpleUI (MIT).", "creditsLink": "Credits and licenses ↗", "newAlt": "new icon: {n}"}, "pt": {"name": "Português (Brasil)", "title": "Personalizador de ícones do KOReader", "lede": "Troque os ícones da interface do KOReader (Kindle 2026.07.1) e do plugin SimpleUI. Escolha um arquivo SVG ou PNG para cada ícone; o que você não mexer continua como está.", "language": "Idioma", "how": "Como aplicar", "packname": "Nome do pack", "k1t": "Gere o zip", "k1b": "Escolha os ícones e toque em Gerar zip. Extraia no computador: surge a pasta <b>koreader/icons</b>.", "k2t": "Copie para o Kindle", "k2b": "Por USB, copie a pasta <b>icons</b> para dentro da pasta <b>koreader</b> do aparelho, mesclando com a existente.", "k3t": "Reinicie o KOReader", "k3b": "Menu → Sair e abra de novo.", "knote": "Para voltar ao original, apague o arquivo do ícone em koreader/icons, ou baixe o pack padrão e copie por cima (confirme a substituição).", "s1t": "Gere o pack", "s1b": "Dê um nome, escolha os ícones e toque em Gerar pack.", "s2t": "Copie para o Kindle", "s2b": "Coloque o .zip, sem extrair, em qualquer pasta do aparelho.", "s3t": "Instale no SimpleUI", "s3b": "Style → Icons → Icon Packs → Install pack from ZIP…, escolha o arquivo e toque no pack. Aplica na hora.", "snote": "Alternativa: extraia o zip em koreader/settings/simpleui/sui_icons/packs/. Para voltar ao padrão, use Style → Icons → System Icons → Reset All System Icons no SimpleUI. O pack padrão baixado aqui cobre só os ícones com pré-visualização.", "none": "Nenhum ícone alterado", "one": "1 ícone alterado", "many": "{n} ícones alterados", "clear": "Limpar", "defpack": "Baixar pack padrão", "genKo": "Gerar zip", "genSui": "Gerar pack", "choose": "Escolher", "remove": "Remover", "totOne": "1 ícone", "totMany": "{n} ícones", "chOne": "1 alterado", "chMany": "{n} alterados", "badfile": "Use um arquivo .svg ou .png", "creditsNote": "Ferramenta não oficial da comunidade. Ícones do KOReader (SIL OFL 1.1) e do SimpleUI (MIT).", "creditsLink": "Créditos e licenças ↗", "newAlt": "novo ícone: {n}"}, "es": {"name": "Español", "title": "Personalizador de iconos de KOReader", "lede": "Cambia los iconos de la interfaz de KOReader (Kindle 2026.07.1) y del plugin SimpleUI. Elige un archivo SVG o PNG para cada icono; lo que no toques se queda como está.", "language": "Idioma", "how": "Cómo aplicar", "packname": "Nombre del pack", "k1t": "Genera el zip", "k1b": "Elige los iconos y pulsa Generar zip. Extráelo en el ordenador: aparece la carpeta <b>koreader/icons</b>.", "k2t": "Copia al Kindle", "k2b": "Por USB, copia la carpeta <b>icons</b> dentro de la carpeta <b>koreader</b> del dispositivo, fusionándola con la existente.", "k3t": "Reinicia KOReader", "k3b": "Menú → Salir y ábrelo de nuevo.", "knote": "Para volver al original, borra el archivo del icono en koreader/icons, o descarga el pack predeterminado y cópialo encima (confirma el reemplazo).", "s1t": "Genera el pack", "s1b": "Ponle un nombre, elige los iconos y pulsa Generar pack.", "s2t": "Copia al Kindle", "s2b": "Pon el .zip, sin extraer, en cualquier carpeta del dispositivo.", "s3t": "Instala en SimpleUI", "s3b": "Style → Icons → Icon Packs → Install pack from ZIP…, elige el archivo y pulsa el pack. Se aplica al instante.", "snote": "Alternativa: extrae el zip en koreader/settings/simpleui/sui_icons/packs/. Para volver al predeterminado, usa Style → Icons → System Icons → Reset All System Icons en SimpleUI. El pack predeterminado descargado aquí solo cubre los iconos con vista previa.", "none": "Ningún icono cambiado", "one": "1 icono cambiado", "many": "{n} iconos cambiados", "clear": "Borrar", "defpack": "Descargar pack predeterminado", "genKo": "Generar zip", "genSui": "Generar pack", "choose": "Elegir", "remove": "Quitar", "totOne": "1 icono", "totMany": "{n} iconos", "chOne": "1 cambiado", "chMany": "{n} cambiados", "badfile": "Usa un archivo .svg o .png", "creditsNote": "Herramienta comunitaria no oficial. Iconos de KOReader (SIL OFL 1.1) y SimpleUI (MIT).", "creditsLink": "Créditos y licencias ↗", "newAlt": "nuevo icono: {n}"}};
-const SECT = {"ko": {"en": [["Navigation bar", "Menu tabs at the top of the reader and the file browser"], ["Header", "Title bar and window action buttons"], ["Footer", "Pagination and expand/collapse controls"], ["Reader", "Bookmarks, dog-ear and favorites"], ["Reader: text and zoom", "Alignment, columns, reading direction and zoom"], ["Reader: rotation", "Screen orientation"], ["Reader: rendering", "Document loading status"], ["Wi-Fi", "Connection indicators"], ["Notices and others", "Notice dialogs and miscellaneous items"]], "pt": [["Barra de navegação", "Abas do menu superior no leitor e no gerenciador de arquivos"], ["Cabeçalho", "Barra de título e botões de ação das janelas"], ["Rodapé", "Paginação e controles de expandir/recolher"], ["Leitor", "Marcadores, orelha de página e favoritos"], ["Leitor: texto e zoom", "Alinhamento, colunas, direção de leitura e zoom"], ["Leitor: rotação", "Orientação da tela"], ["Leitor: renderização", "Status de carregamento do documento"], ["Wi-Fi", "Indicadores de conexão"], ["Avisos e outros", "Janelas de aviso e itens diversos"]], "es": [["Barra de navegación", "Pestañas del menú superior en el lector y en el explorador de archivos"], ["Encabezado", "Barra de título y botones de acción de las ventanas"], ["Pie de página", "Paginación y controles de expandir/contraer"], ["Lector", "Marcadores, esquina de página y favoritos"], ["Lector: texto y zoom", "Alineación, columnas, dirección de lectura y zoom"], ["Lector: rotación", "Orientación de la pantalla"], ["Lector: renderizado", "Estado de carga del documento"], ["Wi-Fi", "Indicadores de conexión"], ["Avisos y otros", "Ventanas de aviso y elementos varios"]]}, "sui": {"en": [["Title bar", "SimpleUI and collections title buttons"], ["Browse by", "Library browse button (default, author, series, tags)"], ["Pagination", "Native pager arrows and navigation bar arrows"], ["Quick actions", "Action icons in the navigation bar, action rows and quick settings"], ["Defaults and covers", "Default icon for custom actions and the empty folder cover"], ["Menu tabs", "Touch menu tabs (reader and file browser)"]], "pt": [["Barra de título", "Botões do título do SimpleUI e das coleções"], ["Navegar por", "Botão de navegação da biblioteca (padrão, autor, série, tags)"], ["Paginação", "Setas de paginação nativas e setas da barra de navegação"], ["Ações rápidas", "Ícones das ações na barra de navegação, linha de ações e ajustes rápidos"], ["Padrões e capas", "Ícone padrão de ações personalizadas e capa de pasta vazia"], ["Abas do menu", "Abas do menu de toque (leitor e navegador de arquivos)"]], "es": [["Barra de título", "Botones de título de SimpleUI y de las colecciones"], ["Explorar por", "Botón de exploración de la biblioteca (predeterminado, autor, serie, etiquetas)"], ["Paginación", "Flechas de paginación nativas y flechas de la barra de navegación"], ["Acciones rápidas", "Iconos de acciones en la barra de navegación, filas de acciones y ajustes rápidos"], ["Predeterminados y portadas", "Icono predeterminado de acciones personalizadas y portada de carpeta vacía"], ["Pestañas del menú", "Pestañas del menú táctil (lector y explorador de archivos)"]]}};
+const UI = {"en": {"name": "English", "title": "KOReader Icon Customizer", "lede": "Swap the icons of the KOReader interface (Kindle 2026.07.1), of the SimpleUI plugin and of ZenOS. Pick an SVG or PNG file for each icon; anything you don't touch stays as it is.", "language": "Language", "how": "How to apply", "packname": "Pack name", "k1t": "Generate the zip", "k1b": "Pick your icons and tap Generate zip. Extract it on your computer: you get the <b>koreader/icons</b> folder.", "k2t": "Copy to the Kindle", "k2b": "Over USB, copy the <b>icons</b> folder into the <b>koreader</b> folder on the device, merging with the existing one.", "k3t": "Restart KOReader", "k3b": "Menu → Exit, then open it again.", "knote": "To go back to the original, delete the icon file from koreader/icons, or download the default pack and copy it over (confirm the replacement).", "s1t": "Generate the pack", "s1b": "Name it, pick your icons and tap Generate pack.", "s2t": "Copy to the Kindle", "s2b": "Put the .zip, without extracting it, in any folder on the device.", "s3t": "Install in SimpleUI", "s3b": "Style → Icons → Icon Packs → Install pack from ZIP…, choose the file and tap the pack. It applies instantly.", "snote": "Alternative: extract the zip into koreader/settings/simpleui/sui_icons/packs/. To go back to the default, use Style → Icons → System Icons → Reset All System Icons in SimpleUI. The default pack downloaded here only covers icons with a preview.", "none": "No icons changed", "one": "1 icon changed", "many": "{n} icons changed", "clear": "Clear", "defpack": "Download default pack", "genKo": "Generate zip", "genSui": "Generate pack", "choose": "Choose", "remove": "Remove", "totOne": "1 icon", "totMany": "{n} icons", "chOne": "1 changed", "chMany": "{n} changed", "badfile": "Use an .svg or .png file", "creditsNote": "Unofficial community tool. Icons by KOReader (SIL OFL 1.1), SimpleUI (MIT) and ZenOS (GPL-3.0).", "creditsLink": "Credits and licenses ↗", "newAlt": "new icon: {n}", "z1t": "Generate the pack", "z1b": "Name it, pick your icons and tap Generate pack. You get a zip with a single folder inside, as ZenOS expects.", "z2t": "Copy to the device", "z2b": "Put the .zip, without extracting it, in <b>koreader/icons/zen</b> (ZenOS creates this folder). ZenOS installs it by itself.", "z3t": "Select it in ZenOS", "z3b": "Zen Settings → Interface → Custom icons: turn the switch on, open <b>Custom icon pack</b>, choose your pack and restart KOReader.", "znote": "A pack can be partial: icons you don't change keep the ZenOS or KOReader defaults. To go back, turn the Custom icons switch off or choose another pack, then restart. ZenOS rejects files over 5 MiB. The 62 icons here are the ones ZenOS documents as replaceable.", "tooBig": "This file is over 5 MiB, which ZenOS rejects"}, "pt": {"name": "Português (Brasil)", "title": "Personalizador de ícones do KOReader", "lede": "Troque os ícones da interface do KOReader (Kindle 2026.07.1), do plugin SimpleUI e do ZenOS. Escolha um arquivo SVG ou PNG para cada ícone; o que você não mexer continua como está.", "language": "Idioma", "how": "Como aplicar", "packname": "Nome do pack", "k1t": "Gere o zip", "k1b": "Escolha os ícones e toque em Gerar zip. Extraia no computador: surge a pasta <b>koreader/icons</b>.", "k2t": "Copie para o Kindle", "k2b": "Por USB, copie a pasta <b>icons</b> para dentro da pasta <b>koreader</b> do aparelho, mesclando com a existente.", "k3t": "Reinicie o KOReader", "k3b": "Menu → Sair e abra de novo.", "knote": "Para voltar ao original, apague o arquivo do ícone em koreader/icons, ou baixe o pack padrão e copie por cima (confirme a substituição).", "s1t": "Gere o pack", "s1b": "Dê um nome, escolha os ícones e toque em Gerar pack.", "s2t": "Copie para o Kindle", "s2b": "Coloque o .zip, sem extrair, em qualquer pasta do aparelho.", "s3t": "Instale no SimpleUI", "s3b": "Style → Icons → Icon Packs → Install pack from ZIP…, escolha o arquivo e toque no pack. Aplica na hora.", "snote": "Alternativa: extraia o zip em koreader/settings/simpleui/sui_icons/packs/. Para voltar ao padrão, use Style → Icons → System Icons → Reset All System Icons no SimpleUI. O pack padrão baixado aqui cobre só os ícones com pré-visualização.", "none": "Nenhum ícone alterado", "one": "1 ícone alterado", "many": "{n} ícones alterados", "clear": "Limpar", "defpack": "Baixar pack padrão", "genKo": "Gerar zip", "genSui": "Gerar pack", "choose": "Escolher", "remove": "Remover", "totOne": "1 ícone", "totMany": "{n} ícones", "chOne": "1 alterado", "chMany": "{n} alterados", "badfile": "Use um arquivo .svg ou .png", "creditsNote": "Ferramenta não oficial da comunidade. Ícones do KOReader (SIL OFL 1.1), do SimpleUI (MIT) e do ZenOS (GPL-3.0).", "creditsLink": "Créditos e licenças ↗", "newAlt": "novo ícone: {n}", "z1t": "Gere o pack", "z1b": "Dê um nome, escolha os ícones e toque em Gerar pack. Você recebe um zip com uma única pasta dentro, como o ZenOS espera.", "z2t": "Copie para o aparelho", "z2b": "Coloque o .zip, sem extrair, em <b>koreader/icons/zen</b> (o ZenOS cria essa pasta). O ZenOS instala sozinho.", "z3t": "Selecione no ZenOS", "z3b": "Zen Settings → Interface → Custom icons: ative a chave, abra <b>Custom icon pack</b>, escolha o seu pack e reinicie o KOReader.", "znote": "Um pack pode ser parcial: os ícones que você não alterar mantêm o padrão do ZenOS ou do KOReader. Para voltar, desative a chave Custom icons ou escolha outro pack e reinicie. O ZenOS rejeita arquivos acima de 5 MiB. Os 62 ícones daqui são os que o ZenOS documenta como substituíveis.", "tooBig": "Este arquivo passa de 5 MiB, e o ZenOS o rejeita"}, "es": {"name": "Español", "title": "Personalizador de iconos de KOReader", "lede": "Cambia los iconos de la interfaz de KOReader (Kindle 2026.07.1), del plugin SimpleUI y de ZenOS. Elige un archivo SVG o PNG para cada icono; lo que no toques se queda como está.", "language": "Idioma", "how": "Cómo aplicar", "packname": "Nombre del pack", "k1t": "Genera el zip", "k1b": "Elige los iconos y pulsa Generar zip. Extráelo en el ordenador: aparece la carpeta <b>koreader/icons</b>.", "k2t": "Copia al Kindle", "k2b": "Por USB, copia la carpeta <b>icons</b> dentro de la carpeta <b>koreader</b> del dispositivo, fusionándola con la existente.", "k3t": "Reinicia KOReader", "k3b": "Menú → Salir y ábrelo de nuevo.", "knote": "Para volver al original, borra el archivo del icono en koreader/icons, o descarga el pack predeterminado y cópialo encima (confirma el reemplazo).", "s1t": "Genera el pack", "s1b": "Ponle un nombre, elige los iconos y pulsa Generar pack.", "s2t": "Copia al Kindle", "s2b": "Pon el .zip, sin extraer, en cualquier carpeta del dispositivo.", "s3t": "Instala en SimpleUI", "s3b": "Style → Icons → Icon Packs → Install pack from ZIP…, elige el archivo y pulsa el pack. Se aplica al instante.", "snote": "Alternativa: extrae el zip en koreader/settings/simpleui/sui_icons/packs/. Para volver al predeterminado, usa Style → Icons → System Icons → Reset All System Icons en SimpleUI. El pack predeterminado descargado aquí solo cubre los iconos con vista previa.", "none": "Ningún icono cambiado", "one": "1 icono cambiado", "many": "{n} iconos cambiados", "clear": "Borrar", "defpack": "Descargar pack predeterminado", "genKo": "Generar zip", "genSui": "Generar pack", "choose": "Elegir", "remove": "Quitar", "totOne": "1 icono", "totMany": "{n} iconos", "chOne": "1 cambiado", "chMany": "{n} cambiados", "badfile": "Usa un archivo .svg o .png", "creditsNote": "Herramienta comunitaria no oficial. Iconos de KOReader (SIL OFL 1.1), SimpleUI (MIT) y ZenOS (GPL-3.0).", "creditsLink": "Créditos y licencias ↗", "newAlt": "nuevo icono: {n}", "z1t": "Genera el pack", "z1b": "Ponle un nombre, elige los iconos y pulsa Generar pack. Obtienes un zip con una sola carpeta dentro, como espera ZenOS.", "z2t": "Copia al dispositivo", "z2b": "Pon el .zip, sin extraer, en <b>koreader/icons/zen</b> (ZenOS crea esta carpeta). ZenOS lo instala solo.", "z3t": "Selecciónalo en ZenOS", "z3b": "Zen Settings → Interface → Custom icons: activa el interruptor, abre <b>Custom icon pack</b>, elige tu pack y reinicia KOReader.", "znote": "Un pack puede ser parcial: los iconos que no cambies mantienen los de ZenOS o KOReader. Para volver, desactiva el interruptor Custom icons o elige otro pack y reinicia. ZenOS rechaza archivos de más de 5 MiB. Los 62 iconos de aquí son los que ZenOS documenta como reemplazables.", "tooBig": "Este archivo supera 5 MiB y ZenOS lo rechaza"}};
+const SECT = {"ko": {"en": [["Navigation bar", "Menu tabs at the top of the reader and the file browser"], ["Header", "Title bar and window action buttons"], ["Footer", "Pagination and expand/collapse controls"], ["Reader", "Bookmarks, dog-ear and favorites"], ["Reader: text and zoom", "Alignment, columns, reading direction and zoom"], ["Reader: rotation", "Screen orientation"], ["Reader: rendering", "Document loading status"], ["Wi-Fi", "Connection indicators"], ["Notices and others", "Notice dialogs and miscellaneous items"]], "pt": [["Barra de navegação", "Abas do menu superior no leitor e no gerenciador de arquivos"], ["Cabeçalho", "Barra de título e botões de ação das janelas"], ["Rodapé", "Paginação e controles de expandir/recolher"], ["Leitor", "Marcadores, orelha de página e favoritos"], ["Leitor: texto e zoom", "Alinhamento, colunas, direção de leitura e zoom"], ["Leitor: rotação", "Orientação da tela"], ["Leitor: renderização", "Status de carregamento do documento"], ["Wi-Fi", "Indicadores de conexão"], ["Avisos e outros", "Janelas de aviso e itens diversos"]], "es": [["Barra de navegación", "Pestañas del menú superior en el lector y en el explorador de archivos"], ["Encabezado", "Barra de título y botones de acción de las ventanas"], ["Pie de página", "Paginación y controles de expandir/contraer"], ["Lector", "Marcadores, esquina de página y favoritos"], ["Lector: texto y zoom", "Alineación, columnas, dirección de lectura y zoom"], ["Lector: rotación", "Orientación de la pantalla"], ["Lector: renderizado", "Estado de carga del documento"], ["Wi-Fi", "Indicadores de conexión"], ["Avisos y otros", "Ventanas de aviso y elementos varios"]]}, "sui": {"en": [["Title bar", "SimpleUI and collections title buttons"], ["Browse by", "Library browse button (default, author, series, tags)"], ["Pagination", "Native pager arrows and navigation bar arrows"], ["Quick actions", "Action icons in the navigation bar, action rows and quick settings"], ["Defaults and covers", "Default icon for custom actions and the empty folder cover"], ["Menu tabs", "Touch menu tabs (reader and file browser)"]], "pt": [["Barra de título", "Botões do título do SimpleUI e das coleções"], ["Navegar por", "Botão de navegação da biblioteca (padrão, autor, série, tags)"], ["Paginação", "Setas de paginação nativas e setas da barra de navegação"], ["Ações rápidas", "Ícones das ações na barra de navegação, linha de ações e ajustes rápidos"], ["Padrões e capas", "Ícone padrão de ações personalizadas e capa de pasta vazia"], ["Abas do menu", "Abas do menu de toque (leitor e navegador de arquivos)"]], "es": [["Barra de título", "Botones de título de SimpleUI y de las colecciones"], ["Explorar por", "Botón de exploración de la biblioteca (predeterminado, autor, serie, etiquetas)"], ["Paginación", "Flechas de paginación nativas y flechas de la barra de navegación"], ["Acciones rápidas", "Iconos de acciones en la barra de navegación, filas de acciones y ajustes rápidos"], ["Predeterminados y portadas", "Icono predeterminado de acciones personalizadas y portada de carpeta vacía"], ["Pestañas del menú", "Pestañas del menú táctil (lector y explorador de archivos)"]]}, "zen": {"en": [["Navbar", "Tabs and page controls of the ZenOS navigation bar"], ["Top menu", "KOReader top menu tabs"], ["Reader bottom bar", "Tabs of the reader configuration bar"], ["Lookup actions", "Highlight, dictionary and lookup popup"], ["Shared controls", "Chevrons, dialogs, bookmarks and reader controls"]], "pt": [["Barra de navegação", "Abas e controles de página da barra do ZenOS"], ["Menu superior", "Abas do menu superior do KOReader"], ["Barra inferior do leitor", "Abas da barra de configuração do leitor"], ["Ações de consulta", "Destaque, dicionário e popup de consulta"], ["Controles compartilhados", "Setas, diálogos, marcadores e controles do leitor"]], "es": [["Barra de navegación", "Pestañas y controles de página de la barra de ZenOS"], ["Menú superior", "Pestañas del menú superior de KOReader"], ["Barra inferior del lector", "Pestañas de la barra de configuración del lector"], ["Acciones de consulta", "Resaltado, diccionario y ventana de consulta"], ["Controles compartidos", "Flechas, diálogos, marcadores y controles del lector"]]}};
 const LAB = {"pt": {"sui_menu": "Botão de menu", "sui_search": "Botão de busca", "sui_back": "Botão voltar", "sui_coll_back": "Coleções: botão voltar", "sui_browse_normal": "Navegar por: padrão", "sui_browse_author": "Navegar por: autor", "sui_browse_series": "Navegar por: série", "sui_browse_tags": "Navegar por: tags", "sui_pager_prev": "Paginação: página anterior", "sui_pager_next": "Paginação: próxima página", "sui_pager_first": "Paginação: primeira página", "sui_pager_last": "Paginação: última página", "sui_navpager_prev": "Barra: seta anterior", "sui_navpager_next": "Barra: seta próxima", "sui_action_library": "Biblioteca", "sui_action_homescreen": "Tela inicial", "sui_action_collections": "Coleções", "sui_action_history": "Histórico", "sui_action_continue": "Continuar lendo", "sui_action_favorites": "Favoritos", "sui_action_bookmark_browser": "Marcadores", "sui_action_wifi_toggle": "Alternar Wi-Fi", "sui_action_frontlight": "Luz frontal", "sui_action_night_mode": "Modo noturno", "sui_action_stats_calendar": "Estatísticas de leitura", "sui_action_power": "Menu de energia", "sui_action_settings": "Ajustes do SimpleUI", "sui_action_browse_authors": "Navegar por autor", "sui_action_browse_series": "Navegar por série", "sui_action_browse_tags": "Navegar por tags", "sui_qa_folder": "Padrão: pasta", "sui_qa_plugin": "Padrão: plugin", "sui_qa_system": "Padrão: sistema", "sui_qa_group": "Padrão: grupo", "sui_fc_empty": "Capa de pasta vazia", "sui_tab_main": "Aba: Menu", "sui_tab_setting": "Aba: Ajustes", "sui_tab_tools": "Aba: Ferramentas", "sui_tab_search": "Aba: Busca", "sui_tab_fm_settings": "Aba: Ajustes do navegador de arquivos", "sui_tab_navigation": "Aba: Navegação do leitor", "sui_tab_typeset": "Aba: Tipografia do leitor", "sui_tab_filebrowser": "Aba: Voltar ao navegador de arquivos", "sui_tab_qs_panel": "Aba: Ajustes rápidos do SimpleUI"}, "es": {"sui_menu": "Botón de menú", "sui_search": "Botón de búsqueda", "sui_back": "Botón atrás", "sui_coll_back": "Colecciones: botón atrás", "sui_browse_normal": "Explorar por: predeterminado", "sui_browse_author": "Explorar por: autor", "sui_browse_series": "Explorar por: serie", "sui_browse_tags": "Explorar por: etiquetas", "sui_pager_prev": "Paginación: página anterior", "sui_pager_next": "Paginación: página siguiente", "sui_pager_first": "Paginación: primera página", "sui_pager_last": "Paginación: última página", "sui_navpager_prev": "Barra: flecha anterior", "sui_navpager_next": "Barra: flecha siguiente", "sui_action_library": "Biblioteca", "sui_action_homescreen": "Pantalla de inicio", "sui_action_collections": "Colecciones", "sui_action_history": "Historial", "sui_action_continue": "Continuar leyendo", "sui_action_favorites": "Favoritos", "sui_action_bookmark_browser": "Marcadores", "sui_action_wifi_toggle": "Alternar Wi-Fi", "sui_action_frontlight": "Luz frontal", "sui_action_night_mode": "Modo nocturno", "sui_action_stats_calendar": "Estadísticas de lectura", "sui_action_power": "Menú de energía", "sui_action_settings": "Ajustes de SimpleUI", "sui_action_browse_authors": "Explorar por autor", "sui_action_browse_series": "Explorar por serie", "sui_action_browse_tags": "Explorar por etiquetas", "sui_qa_folder": "Predeterminado: carpeta", "sui_qa_plugin": "Predeterminado: plugin", "sui_qa_system": "Predeterminado: sistema", "sui_qa_group": "Predeterminado: grupo", "sui_fc_empty": "Portada de carpeta vacía", "sui_tab_main": "Pestaña: Menú", "sui_tab_setting": "Pestaña: Ajustes", "sui_tab_tools": "Pestaña: Herramientas", "sui_tab_search": "Pestaña: Búsqueda", "sui_tab_fm_settings": "Pestaña: Ajustes del explorador de archivos", "sui_tab_navigation": "Pestaña: Navegación del lector", "sui_tab_typeset": "Pestaña: Tipografía del lector", "sui_tab_filebrowser": "Pestaña: Volver al explorador de archivos", "sui_tab_qs_panel": "Pestaña: Ajustes rápidos de SimpleUI"}};
+const ZEN_SECTIONS = [["Navbar", "Tabs and page controls of the ZenOS navigation bar", ["book.opened", "home", "library", "star.empty", "tab_authors", "tab_collections", "tab_exit", "tab_history", "tab_left", "tab_manga", "tab_news", "tab_right", "tab_series", "tab_stats", "tab_tags", "tab_to_be_read"]], ["Top menu", "KOReader top menu tabs", ["appbar.filebrowser", "appbar.menu", "appbar.navigation", "appbar.search", "appbar.settings", "appbar.tools", "appbar.typeset"]], ["Reader bottom bar", "Tabs of the reader configuration bar", ["appbar.contrast", "appbar.crop", "appbar.pagefit", "appbar.pageview", "appbar.rotation", "appbar.textsize"]], ["Lookup actions", "Highlight, dictionary and lookup popup", ["lookup.ai", "lookup.dictionary", "lookup.highlight", "lookup.search", "lookup.translate", "lookup.vocab", "lookup.vocab_remove", "lookup.wikipedia"]], ["Shared controls", "Chevrons, dialogs, bookmarks and reader controls", ["appbar.pokeball", "back.top", "back.top.rtl", "bookmark", "cancel", "check", "chevron.first", "chevron.last", "chevron.left", "chevron.right", "chevron.up", "close", "control.collapse", "control.expand", "control.expand.alpha", "cre.render.partial", "dogear.alpha", "edit", "exit", "notice-warning", "plus", "position.marker", "position.marker.top", "star.full", "texture-box"]]];
+const ZLAB = {"en": {"book.opened": "Continue tab", "home": "Home tab", "library": "Library tab", "star.empty": "Favorites tab", "tab_authors": "Authors tab", "tab_collections": "Collections tab", "tab_exit": "Exit tab", "tab_history": "History tab", "tab_left": "Previous page", "tab_manga": "Manga tab", "tab_news": "News tab", "tab_right": "Next page", "tab_series": "Series tab", "tab_stats": "Statistics tab", "tab_tags": "Tags tab", "tab_to_be_read": "To Be Read tab", "appbar.filebrowser": "File browser tab", "appbar.menu": "Main menu tab", "appbar.navigation": "Navigation tab", "appbar.search": "Search tab", "appbar.settings": "Settings tab", "appbar.tools": "Tools tab", "appbar.typeset": "Typesetting tab", "appbar.contrast": "Contrast tab", "appbar.crop": "Page crop tab", "appbar.pagefit": "Page fit tab", "appbar.pageview": "Page view tab", "appbar.rotation": "Rotation tab", "appbar.textsize": "Text size tab", "lookup.ai": "AI lookup", "lookup.dictionary": "Dictionary", "lookup.highlight": "Highlight", "lookup.search": "Search selection", "lookup.translate": "Translate", "lookup.vocab": "Add to vocabulary", "lookup.vocab_remove": "Remove from vocabulary", "lookup.wikipedia": "Wikipedia", "appbar.pokeball": "Long-hold indicator", "back.top": "Back / up", "back.top.rtl": "Back / up (RTL)", "bookmark": "Bookmark", "cancel": "Cancel", "check": "Confirm", "chevron.first": "Jump to first", "chevron.last": "Jump to last", "chevron.left": "Previous / back", "chevron.right": "Next / forward", "chevron.up": "Expand / to top", "close": "Close", "control.collapse": "Collapse TOC branch", "control.expand": "Expand TOC branch", "control.expand.alpha": "Expansion indicator", "cre.render.partial": "Partial rendering", "dogear.alpha": "Bookmark dog-ear", "edit": "Edit", "exit": "Exit", "notice-warning": "Warning dialog", "plus": "Add / new item", "position.marker": "Progress marker", "position.marker.top": "Progress marker (top)", "star.full": "Filled star", "texture-box": "Selection texture"}, "pt": {"book.opened": "Aba Continuar", "home": "Aba Início", "library": "Aba Biblioteca", "star.empty": "Aba Favoritos", "tab_authors": "Aba Autores", "tab_collections": "Aba Coleções", "tab_exit": "Aba Sair", "tab_history": "Aba Histórico", "tab_left": "Página anterior", "tab_manga": "Aba Mangá", "tab_news": "Aba Notícias", "tab_right": "Próxima página", "tab_series": "Aba Séries", "tab_stats": "Aba Estatísticas", "tab_tags": "Aba Tags", "tab_to_be_read": "Aba Para ler", "appbar.filebrowser": "Aba Navegador de arquivos", "appbar.menu": "Aba Menu principal", "appbar.navigation": "Aba Navegação", "appbar.search": "Aba Busca", "appbar.settings": "Aba Ajustes", "appbar.tools": "Aba Ferramentas", "appbar.typeset": "Aba Tipografia", "appbar.contrast": "Aba Contraste", "appbar.crop": "Aba Cortar página", "appbar.pagefit": "Aba Ajuste de página", "appbar.pageview": "Aba Visualização", "appbar.rotation": "Aba Rotação", "appbar.textsize": "Aba Tamanho do texto", "lookup.ai": "Consulta com IA", "lookup.dictionary": "Dicionário", "lookup.highlight": "Destacar", "lookup.search": "Buscar seleção", "lookup.translate": "Traduzir", "lookup.vocab": "Adicionar ao vocabulário", "lookup.vocab_remove": "Remover do vocabulário", "lookup.wikipedia": "Wikipedia", "appbar.pokeball": "Indicador de toque longo", "back.top": "Voltar / subir", "back.top.rtl": "Voltar / subir (RTL)", "bookmark": "Marcador", "cancel": "Cancelar", "check": "Confirmar", "chevron.first": "Ir para o início", "chevron.last": "Ir para o fim", "chevron.left": "Anterior / voltar", "chevron.right": "Próximo / avançar", "chevron.up": "Expandir / ao topo", "close": "Fechar", "control.collapse": "Recolher item do sumário", "control.expand": "Expandir item do sumário", "control.expand.alpha": "Indicador de expansão", "cre.render.partial": "Renderização parcial", "dogear.alpha": "Orelha do marcador", "edit": "Editar", "exit": "Sair", "notice-warning": "Aviso", "plus": "Adicionar / novo item", "position.marker": "Marcador de progresso", "position.marker.top": "Marcador de progresso (topo)", "star.full": "Estrela cheia", "texture-box": "Textura de seleção"}, "es": {"book.opened": "Pestaña Continuar", "home": "Pestaña Inicio", "library": "Pestaña Biblioteca", "star.empty": "Pestaña Favoritos", "tab_authors": "Pestaña Autores", "tab_collections": "Pestaña Colecciones", "tab_exit": "Pestaña Salir", "tab_history": "Pestaña Historial", "tab_left": "Página anterior", "tab_manga": "Pestaña Manga", "tab_news": "Pestaña Noticias", "tab_right": "Página siguiente", "tab_series": "Pestaña Series", "tab_stats": "Pestaña Estadísticas", "tab_tags": "Pestaña Etiquetas", "tab_to_be_read": "Pestaña Por leer", "appbar.filebrowser": "Pestaña Explorador de archivos", "appbar.menu": "Pestaña Menú principal", "appbar.navigation": "Pestaña Navegación", "appbar.search": "Pestaña Búsqueda", "appbar.settings": "Pestaña Ajustes", "appbar.tools": "Pestaña Herramientas", "appbar.typeset": "Pestaña Tipografía", "appbar.contrast": "Pestaña Contraste", "appbar.crop": "Pestaña Recortar página", "appbar.pagefit": "Pestaña Ajuste de página", "appbar.pageview": "Pestaña Vista de página", "appbar.rotation": "Pestaña Rotación", "appbar.textsize": "Pestaña Tamaño del texto", "lookup.ai": "Consulta con IA", "lookup.dictionary": "Diccionario", "lookup.highlight": "Resaltar", "lookup.search": "Buscar selección", "lookup.translate": "Traducir", "lookup.vocab": "Añadir al vocabulario", "lookup.vocab_remove": "Quitar del vocabulario", "lookup.wikipedia": "Wikipedia", "appbar.pokeball": "Indicador de pulsación larga", "back.top": "Atrás / subir", "back.top.rtl": "Atrás / subir (RTL)", "bookmark": "Marcador", "cancel": "Cancelar", "check": "Confirmar", "chevron.first": "Ir al principio", "chevron.last": "Ir al final", "chevron.left": "Anterior / atrás", "chevron.right": "Siguiente / adelante", "chevron.up": "Expandir / arriba", "close": "Cerrar", "control.collapse": "Contraer rama del índice", "control.expand": "Expandir rama del índice", "control.expand.alpha": "Indicador de expansión", "cre.render.partial": "Renderizado parcial", "dogear.alpha": "Esquina del marcador", "edit": "Editar", "exit": "Salir", "notice-warning": "Aviso", "plus": "Añadir / nuevo elemento", "position.marker": "Marcador de progreso", "position.marker.top": "Marcador de progreso (arriba)", "star.full": "Estrella llena", "texture-box": "Textura de selección"}};
+const ZEN_PREV = {"library": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800px\" height=\"800px\" viewBox=\"0 0 36 36\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-linejoin=\"round\"> <title>library-line<\/title> <path d=\"M20.25 13.2l4.25-1.6c.76-.29 1.61.1 1.9.86l6.37 16.8c.29.76-.1 1.61-.86 1.9l-4.25 1.61c-.76.29-1.61-.1-1.9-.86l-5.51-14.54\"/> <rect x=\"13.25\" y=\"7.75\" width=\"7\" height=\"24.5\" rx=\"1.25\"/> <rect x=\"3.75\" y=\"3.75\" width=\"9.5\" height=\"28.5\" rx=\"1.25\"/> <\/svg>", "home": "<?xml version=\"1.0\" encoding=\"utf-8\"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> <svg width=\"800px\" height=\"800px\" viewBox=\"0 0 64 64\" xmlns=\"http://www.w3.org/2000/svg\" stroke-width=\"3\" stroke=\"#000000\" fill=\"none\"><path d=\"M51.61,25.21,33.2,11.4a2,2,0,0,0-2.4,0L12.39,25.21a2,2,0,0,0-.8,1.6V53.45a2,2,0,0,0,2,2H25a2,2,0,0,0,2-2V45a2,2,0,0,1,2-2h7a2,2,0,0,1,2,2v8.45a2,2,0,0,0,2,2H50.41a2,2,0,0,0,2-2V26.81A2,2,0,0,0,51.61,25.21Z\"/><\/svg>", "lookup.ai": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <svg width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M10.5 6.5C10.85 10.35 13.65 13.15 17.5 13.5C13.65 13.85 10.85 16.65 10.5 20.5C10.15 16.65 7.35 13.85 3.5 13.5C7.35 13.15 10.15 10.35 10.5 6.5Z\" fill=\"#000000\"/> <path d=\"M17.75 2.5C17.9 4.15 19.1 5.35 20.75 5.5C19.1 5.65 17.9 6.85 17.75 8.5C17.6 6.85 16.4 5.65 14.75 5.5C16.4 5.35 17.6 4.15 17.75 2.5Z\" fill=\"#000000\"/> <\/svg>", "lookup.dictionary": "<?xml version=\"1.0\" encoding=\"utf-8\"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> <svg width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M12.0393 6.01656C9.5726 6.18879 7.625 8.24439 7.625 10.7549C7.625 13.3782 9.75165 15.5049 12.375 15.5049C14.9984 15.5049 17.125 13.3782 17.125 10.7549C17.125 8.13153 14.9984 6.00488 12.375 6.00488C12.3717 6.00488 12.3684 6.00489 12.3651 6.00489C12.3274 6.00167 12.2891 6 12.25 6C12.1773 6 12.1071 6.00578 12.0393 6.01656ZM10.4183 7.85249C10.1924 8.52871 10.0498 9.3576 10.0108 10.25H8.91115C9.05517 9.25313 9.61933 8.3922 10.4183 7.85249ZM10.044 11.75C10.1073 12.4565 10.2372 13.1094 10.4226 13.6601C9.75575 13.2111 9.25194 12.5386 9.01849 11.75H10.044ZM14.0096 13.8505C14.0107 13.8476 14.0118 13.8447 14.0129 13.8418C14.2328 13.2554 14.3856 12.5359 14.456 11.75H15.7315C15.4623 12.6595 14.8334 13.4146 14.0096 13.8505ZM12.949 11.75C12.8843 12.3676 12.7625 12.9043 12.6084 13.3151C12.4911 13.6278 12.3696 13.8288 12.2727 13.9381C12.2645 13.9473 12.2569 13.9554 12.25 13.9626C12.2431 13.9554 12.2355 13.9473 12.2273 13.9381C12.1304 13.8288 12.0089 13.6278 11.8916 13.3151C11.7375 12.9043 11.6157 12.3676 11.551 11.75H12.949ZM12.9875 10.25H11.5125C11.5542 9.42163 11.6973 8.70308 11.8916 8.18492C12.0089 7.87219 12.1304 7.67121 12.2273 7.56189C12.2355 7.55267 12.2431 7.54456 12.25 7.53743C12.2569 7.54456 12.2645 7.55267 12.2727 7.56189C12.3696 7.67121 12.4911 7.87219 12.6084 8.18492C12.8027 8.70308 12.9458 9.42163 12.9875 10.25ZM14.4892 10.25C14.4465 9.27176 14.2792 8.36984 14.0142 7.66168C14.9796 8.17434 15.6764 9.12572 15.8389 10.25H14.4892ZM12.3075 7.48948C12.3079 7.48922 12.3075 7.48953 12.3075 7.48948C12.3075 7.48935 12.3061 7.48991 12.3034 7.49154C12.305 7.49088 12.3068 7.48985 12.3075 7.48948ZM12.194 7.49035C12.1946 7.49068 12.1955 7.49109 12.1966 7.49154C12.1939 7.48991 12.1925 7.48935 12.1925 7.48948C12.1925 7.48955 12.193 7.48987 12.194 7.49035Z\" fill=\"#000000\"/> <path d=\"M6.5 2C5.11929 2 4 3.11929 4 4.5V19.5C4 20.8807 5.11929 22 6.5 22H19.75C20.1642 22 20.5 21.6642 20.5 21.25C20.5 20.8358 20.1642 20.5 19.75 20.5H6.5C5.94772 20.5 5.5 20.0523 5.5 19.5H19.75C20.1642 19.5 20.5 19.1642 20.5 18.75V4.5C20.5 3.11929 19.3807 2 18 2H6.5ZM19 4.5V18H5.5V4.5C5.5 3.94772 5.94772 3.5 6.5 3.5H18C18.5523 3.5 19 3.94772 19 4.5Z\" fill=\"#000000\"/> <\/svg>", "lookup.highlight": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> <svg width=\"800px\" height=\"800px\" viewBox=\"0 0 512 512\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"> <title>highlight<\/title> <g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"> <g id=\"drop\" fill=\"#000000\" transform=\"translate(64.000000, 44.956885)\"> <path d=\"M405.333333,381.709781 L362.666667,424.376448 L85.3333333,424.376448 L128,381.709781 L405.333333,381.709781 Z M282.327442,7.10542736e-15 L403.006999,120.679557 L384.970948,143.928809 L352.415716,185.42913 L333.317316,209.393653 L316.302987,230.396289 L304.909911,244.204529 L291.542704,260.023864 L282.884971,269.944627 L275.399527,278.199329 L269.086373,284.787971 L254.094195,299.615469 L223.246131,330.913053 L206.971557,347.655494 L201.097332,347.365048 L194.94444,347.269241 C184.457401,347.271762 172.809254,348.085275 160,349.709781 L151.970104,350.837434 L144.123951,352.129117 L136.61735,353.518237 L126.334944,355.638938 L106.666667,360.376448 L42.6666667,392.376448 L1.42108547e-14,403.043115 L10.6666667,360.376448 L42.6666667,296.376448 L43.6781629,293.970042 L45.4668727,289.038094 L46.9677202,284.280153 L48.6019332,278.358143 C50.270448,271.857501 51.9932963,263.626067 53.3333333,253.709781 C55.8645145,234.979019 56.7941068,216.011107 56.1221103,196.806047 L59.4284876,193.08414 L62.8024546,189.492637 L78.5389897,173.389008 L116.39305,135.764502 L128.060065,124.568671 L141.033549,112.687653 L152.352994,102.689504 L164.50858,92.2528346 L177.500305,81.3776459 L191.328171,70.0639374 L205.992177,58.3117091 L229.55595,39.8611422 L246.310307,27.0126145 L263.900804,13.7255671 L282.327442,7.10542736e-15 Z M98.2491614,232.79585 C97.9559598,237.447641 97.5768923,242.08805 97.1119193,246.716812 L95.6156779,259.423605 C94.6195581,266.7949 93.4216694,273.638856 92.0665399,279.972262 L87.7883357,298.089846 L106.435281,315.212199 L124.845508,312.355266 C135.006153,310.301434 145.001214,308.603546 154.631889,307.382156 C160.282804,306.665491 165.770852,306.085382 171.099187,305.644179 L98.2491614,232.79585 Z M278.293333,56.312448 L272.274533,60.8697171 L247.868843,79.6578618 L232.674928,91.6054817 L218.346317,103.086115 L204.887227,114.094629 L192.302682,124.624617 L180.598706,134.668 L169.782552,144.214456 L156.548615,156.344005 L146.471044,166.026008 L119.059,193.266 L209.655,283.862 L215.23475,278.178375 L234.212668,259.239604 L238.2793,255.269016 L243.792887,249.538123 L250.73823,241.890545 L258.952887,232.48574 L271.99948,217.050376 L283.149955,203.53887 L299.950576,182.802205 L318.845645,159.094841 L346.197333,124.216448 L278.293333,56.312448 Z\" id=\"Combined-Shape\"> <\/path> <\/g> <\/g> <\/svg>", "lookup.search": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> <svg width=\"800px\" height=\"800px\" viewBox=\"0 0 512 512\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"> <title>search<\/title> <g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"> <g id=\"Shape\" fill=\"#000000\" transform=\"translate(42.666667, 42.666667)\"> <path d=\"M426.630187,396.463573 L305.314987,275.148373 C327.799467,246.239573 341.333333,210.04032 341.333333,170.666667 C341.333333,76.56256 264.770773,-7.10542736e-15 170.666667,-7.10542736e-15 C76.56256,-7.10542736e-15 7.10542736e-15,76.56256 7.10542736e-15,170.666667 C7.10542736e-15,264.770773 76.56256,341.333333 170.666667,341.333333 C210.04032,341.333333 246.239573,327.799467 275.148373,305.3152 L396.463573,426.6304 L426.630187,396.463573 Z M170.666667,298.666667 C100.083413,298.666667 42.6666667,241.24992 42.6666667,170.666667 C42.6666667,100.083413 100.083413,42.6666667 170.666667,42.6666667 C241.24992,42.6666667 298.666667,100.083413 298.666667,170.666667 C298.666667,241.24992 241.24992,298.666667 170.666667,298.666667 Z\"> <\/path> <\/g> <\/g> <\/svg>", "lookup.translate": "<?xml version=\"1.0\" encoding=\"utf-8\"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> <svg width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M12.913 17H20.087M12.913 17L11 21M12.913 17L15.7783 11.009C16.0092 10.5263 16.1246 10.2849 16.2826 10.2086C16.4199 10.1423 16.5801 10.1423 16.7174 10.2086C16.8754 10.2849 16.9908 10.5263 17.2217 11.009L20.087 17M20.087 17L22 21M2 5H8M8 5H11.5M8 5V3M11.5 5H14M11.5 5C11.0039 7.95729 9.85259 10.6362 8.16555 12.8844M10 14C9.38747 13.7248 8.76265 13.3421 8.16555 12.8844M8.16555 12.8844C6.81302 11.8478 5.60276 10.4266 5 9M8.16555 12.8844C6.56086 15.0229 4.47143 16.7718 2 18\" stroke=\"#000000\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/> <\/svg>", "lookup.vocab": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> <svg width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"> <g> <path fill=\"none\" d=\"M0 0H24V24H0z\"/> <path d=\"M11 2c4.068 0 7.426 3.036 7.934 6.965l2.25 3.539c.148.233.118.58-.225.728L19 14.07V17c0 1.105-.895 2-2 2h-1.999L15 22H6v-3.694c0-1.18-.436-2.297-1.244-3.305C3.657 13.631 3 11.892 3 10c0-4.418 3.582-8 8-8zm0 2c-3.314 0-6 2.686-6 6 0 1.385.468 2.693 1.316 3.75C7.41 15.114 8 16.667 8 18.306V20h5l.002-3H17v-4.248l1.55-.664-1.543-2.425-.057-.442C16.566 6.251 14.024 4 11 4zm0 3c.552 0 1 .448 1 1v1h1c.552 0 1 .448 1 1s-.448 1-1 1h-1v1c0 .552-.448 1-1 1s-1-.448-1-1v-1.001L9 11c-.552 0-1-.448-1-1s.448-1 1-1l1-.001V8c0-.552.448-1 1-1z\"/> <\/g> <\/svg>", "lookup.vocab_remove": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> <svg width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"> <g> <path fill=\"none\" d=\"M0 0H24V24H0z\"/> <path d=\"M11 2c4.068 0 7.426 3.036 7.934 6.965l2.25 3.539c.148.233.118.58-.225.728L19 14.07V17c0 1.105-.895 2-2 2h-1.999L15 22H6v-3.694c0-1.18-.436-2.297-1.244-3.305C3.657 13.631 3 11.892 3 10c0-4.418 3.582-8 8-8zm0 2c-3.314 0-6 2.686-6 6 0 1.385.468 2.693 1.316 3.75C7.41 15.114 8 16.667 8 18.306V20h5l.002-3H17v-4.248l1.55-.664-1.543-2.425-.057-.442C16.566 6.251 14.024 4 11 4zm-2 5c-.552 0-1 .448-1 1s.448 1 1 1h4c.552 0 1-.448 1-1s-.448-1-1-1z\"/> <\/g> <\/svg>", "lookup.wikipedia": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> <svg width=\"800px\" height=\"800px\" viewBox=\"0 0 50.8 50.8\" xmlns=\"http://www.w3.org/2000/svg\"> <g style=\"display:inline\"> <g style=\"display:inline;stroke-width:.879477\"> <path d=\"m35.684 49.707 39.875 89.56 47.62-89.56\" style=\"fill:none;stroke:#000000;stroke-width:10.8109;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" transform=\"matrix(.29284 0 0 .29453 -2.8 -1.01)\"/> <path d=\"m79.2 49.707 43.933 89.56 38.627-89.56\" style=\"fill:none;stroke:#000000;stroke-width:10.8109;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" transform=\"matrix(.29284 0 0 .29453 -2.8 -1.01)\"/> <path d=\"M25.998 49.707h23.746\" style=\"fill:none;stroke:#000000;stroke-width:8.3921;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" transform=\"matrix(.37724 0 0 .37942 -6.637 -5.23)\"/> <path d=\"M71.033 49.707h19.815\" style=\"fill:none;stroke:#000000;stroke-width:8.30325;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" transform=\"matrix(.38128 0 0 .38348 -10.469 -5.431)\"/> <path d=\"M115.277 49.707h17.031\" style=\"fill:none;stroke:#000000;stroke-width:8.41527;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" transform=\"matrix(.3762 0 0 .37838 -13.313 -5.152)\"/> <path d=\"M152.151 49.707h20.116\" style=\"fill:none;stroke:#000000;stroke-width:10.4052;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" transform=\"matrix(.30426 0 0 .30602 -4.784 -1.58)\"/> <\/g> <\/g> <\/svg>", "tab_authors": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> <svg width=\"800px\" height=\"800px\" viewBox=\"0 0 1024 1024\" fill=\"#000000\" class=\"icon\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M309.52 494.12c-1.94 0-3.47 0.28-4.67 0.76 1.63-0.49 3.37-0.76 5.16-0.76h-0.49z m535.61 213.4c0.05-0.99 0.18-1.96 0.39-2.9-0.23 0.43-0.35 1.35-0.39 2.9z m35.73-394.23c0.01-0.04 0.01-0.09 0.01-0.13v-0.46c0 0.2 0 0.4-0.01 0.59z m-35.75-0.06c0 0.04 0 0.08 0.01 0.12-0.01-0.21-0.01-0.43-0.01-0.65v0.53z\" /><path stroke=\"#000000\" stroke-width=\"10\" stroke-linejoin=\"round\" d=\"M866.673 849.43a348 348 0 0 0-32.69-107.48c-3.26-6.62-6.71-13.13-10.37-19.51a0.21 0.21 0 0 0-0.04-0.06c-15.86-26.86-35.32-51.8-58-74.06l-0.01-0.01c-4.93-4.84-10.01-9.56-15.24-14.14-37.29-32.68-80.34-56.91-126.25-71.65 8.31-4.6 16.35-9.76 24.07-15.47 8.79-6.48 17.16-13.68 25.03-21.55 41.39-41.39 64.19-96.43 64.19-154.97 0-58.54-22.8-113.58-64.19-154.97-40.64-40.64-94.44-63.35-151.78-64.17-0.91-0.01-1.82-0.02-2.73-0.02-0.91 0-1.82 0.01-2.73 0.02-57.34 0.82-111.14 23.53-151.78 64.17-41.39 41.39-64.19 96.43-64.19 154.97 0 58.54 22.8 113.58 64.19 154.97 7.87 7.87 16.24 15.07 25.03 21.55 7.72 5.71 15.76 10.87 24.07 15.47-45.91 14.74-88.96 38.97-126.25 71.65-5.23 4.58-10.31 9.3-15.24 14.14-22.7 22.28-42.18 47.24-58.05 74.13-3.66 6.38-7.11 12.89-10.37 19.51a348 348 0 0 0-32.69 107.48c-1.61 12 6.81 23.03 18.8 24.64 0.99 0.13 1.98 0.2 2.95 0.2 0.89 0 1.76-0.05 2.63-0.16 8.67-1.89 15.67-8.96 17.03-18.25 10.1-69.32 43.14-132.31 90.63-180.28 56.36-56.95 133.07-92.74 215.97-92.88h0.47c82.72 0.28 159.25 36.04 215.5 92.88 47.49 47.97 80.53 110.96 90.63 180.28 1.36 9.27 8.33 16.33 16.98 18.24 0.02 0 0.03 0.01 0.05 0.01 0.87 0.11 1.74 0.16 2.63 0.16 0.97 0 1.96-0.07 2.95-0.2 11.99-1.61 20.41-12.64 18.8-24.64z m-348.48-303.57c-0.44 0-0.88 0-1.32-0.01-81.8-0.6-154.73-57.43-174.66-133.66-0.22-0.83-0.44-1.67-0.64-2.51-3.12-12.6-4.78-25.7-4.78-39.15s1.66-26.7 4.78-39.52c0.2-0.86 0.42-1.71 0.64-2.56 20.04-78.14 93.65-140.25 175.98-140.25h0.94c82.33 0 155.94 62.11 175.98 140.25 0.22 0.85 0.44 1.7 0.64 2.56 3.12 12.82 4.78 26.07 4.78 39.52 0 13.45-1.66 26.55-4.78 39.15-0.2 0.84-0.42 1.68-0.64 2.51-19.93 76.23-92.86 133.06-174.66 133.66-0.75 0.01-1.5 0.01-2.26 0.01z\" /><\/svg>", "tab_collections": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\"> <polygon style=\"fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\" points=\"24.04,7.49 7.64,15.7 24.04,23.9 40.45,15.7 24.04,7.49\"/> <polyline style=\"fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\" points=\"7.64,23.9 24.04,32.1 40.45,23.9\"/> <polyline style=\"fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\" points=\"7.64,32.1 24.04,40.31 40.45,32.1\"/> <\/svg>", "tab_exit": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:svg=\"http://www.w3.org/2000/svg\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\" xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\" version=\"1.1\" width=\"24\" height=\"24\" viewBox=\"2 2 20 20\" enable-background=\"new 0 0 24.00 24.00\" xml:space=\"preserve\" id=\"svg4\" sodipodi:docname=\"exit.svg\" inkscape:version=\"1.0.2 (e86c870879, 2021-01-15)\"><metadata id=\"metadata10\"><rdf:RDF><cc:Work rdf:about=\"\"><dc:format>image/svg+xml<\/dc:format><dc:type rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\" /><dc:title /><\/cc:Work><\/rdf:RDF><\/metadata><defs id=\"defs8\" /><sodipodi:namedview pagecolor=\"#ffffff\" bordercolor=\"#666666\" borderopacity=\"1\" objecttolerance=\"10\" gridtolerance=\"10\" guidetolerance=\"10\" inkscape:pageopacity=\"0\" inkscape:pageshadow=\"2\" inkscape:window-width=\"2560\" inkscape:window-height=\"1381\" id=\"namedview6\" showgrid=\"true\" inkscape:zoom=\"42\" inkscape:cx=\"12\" inkscape:cy=\"12\" inkscape:window-x=\"0\" inkscape:window-y=\"0\" inkscape:window-maximized=\"1\" inkscape:current-layer=\"svg4\" inkscape:document-rotation=\"0\"><inkscape:grid type=\"xygrid\" id=\"grid855\" /><\/sodipodi:namedview> <path style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none\" d=\"M 18,6 5,19\" id=\"path834\" /><path style=\"fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none\" d=\"M 5,6 18,19\" id=\"path836\" sodipodi:nodetypes=\"cc\" /><\/svg>", "tab_history": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\"> <polyline style=\"fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\" points=\"6.09,10.41 6.09,21.39 17.07,21.39\"/> <path style=\"fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\" d=\"M8.83,28.71c2.26,8.81,11.24,14.11,20.05,11.85,8.81-2.26,14.11-11.24,11.85-20.05s-11.24-14.11-20.05-11.85c-2.94.76-5.62,2.31-7.73,4.5l-6.86,8.23\"/> <polyline style=\"fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\" points=\"25.3,15.9 25.3,26.88 32.62,30.54\"/> <\/svg>", "tab_left": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:svg=\"http://www.w3.org/2000/svg\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\" xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\" version=\"1.1\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" enable-background=\"new 0 0 76.00 76.00\" xml:space=\"preserve\" id=\"svg4\" sodipodi:docname=\"appbar.chevron.left.svg\" inkscape:export-xdpi=\"96\" inkscape:export-ydpi=\"96\" inkscape:version=\"1.0.1 (3bc2e813f5, 2020-09-07)\"><metadata id=\"metadata10\"><rdf:RDF><cc:Work rdf:about=\"\"><dc:format>image/svg+xml<\/dc:format><dc:type rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\" /><dc:title><\/dc:title><\/cc:Work><\/rdf:RDF><\/metadata><defs id=\"defs8\" /><sodipodi:namedview pagecolor=\"#ffffff\" bordercolor=\"#666666\" borderopacity=\"1\" objecttolerance=\"10\" gridtolerance=\"10\" guidetolerance=\"10\" inkscape:pageopacity=\"0\" inkscape:pageshadow=\"2\" inkscape:window-width=\"1914\" inkscape:window-height=\"1004\" id=\"namedview6\" showgrid=\"true\" inkscape:zoom=\"16.8125\" inkscape:cx=\"24\" inkscape:cy=\"24\" inkscape:window-x=\"0\" inkscape:window-y=\"54\" inkscape:window-maximized=\"0\" inkscape:current-layer=\"svg4\" inkscape:document-rotation=\"0\" inkscape:snap-page=\"true\"><inkscape:grid type=\"xygrid\" id=\"grid835\" originx=\"0\" originy=\"0\" /><\/sodipodi:namedview> <path fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.205196\" stroke-linejoin=\"round\" d=\"M 18.682479,24.000001 33.833334,40 H 29.727073 L 14.166666,23.999888 29.727073,8.0000003 h 4.106261 z\" id=\"path2\" sodipodi:nodetypes=\"ccccccc\" /> <\/svg>", "tab_manga": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M28.2926 42L26.8742 39.7954C30.6523 39.2707 33.6824 38.0265 35.9644 36.0628C38.2485 34.101 39.3905 31.7362 39.3905 28.9681C39.3905 27.2411 38.7673 25.6805 37.5209 24.2863C36.2765 22.8921 34.6126 21.8755 32.5291 21.2365C31.2356 24.3026 29.7631 27.0237 28.1114 29.3998C26.4598 31.776 24.6423 33.8234 22.6591 35.5422L23.1289 37.1743C23.2885 37.7275 23.4706 38.3103 23.6753 38.9227L21.1364 39.5994C21.0218 39.2075 20.9133 38.8196 20.811 38.4358C20.7087 38.0521 20.5859 37.6101 20.4426 37.11C18.838 38.0204 17.4371 38.6767 16.2398 39.0788C15.0446 39.481 13.8841 39.6821 12.7585 39.6821C11.3954 39.6821 10.2616 39.185 9.35693 38.1909C8.45231 37.1967 8 35.9842 8 34.5532C8 31.8096 8.96397 29.2182 10.8919 26.7788C12.8219 24.3414 15.4969 22.3184 18.9168 20.7099C18.968 19.5443 19.0386 18.3909 19.1287 17.2498C19.2187 16.1087 19.3149 14.9553 19.4172 13.7897C17.827 13.8408 16.2296 13.8377 14.625 13.7806C13.0184 13.7234 11.3729 13.6387 9.68849 13.5264L9.61174 10.939C10.9421 11.1554 12.4044 11.3024 13.9987 11.3799C15.5931 11.4575 17.5139 11.4759 19.7611 11.4351C19.8634 10.5165 19.978 9.6101 20.1049 8.716C20.2318 7.82189 20.2646 6.91656 20.2032 6L23.0951 6.07655C22.8167 6.94412 22.611 7.82393 22.478 8.716C22.3429 9.6101 22.1986 10.5103 22.0451 11.4167C25.1315 11.2636 27.9088 11.0441 30.3771 10.7584C32.8453 10.4726 35.1591 10.0939 37.3183 9.62235L37.395 12.1301C34.8797 12.5384 32.3398 12.8732 29.7753 13.1345C27.2109 13.3958 24.5656 13.603 21.8395 13.7561C21.6962 14.7829 21.5928 15.7974 21.5294 16.7997C21.4659 17.802 21.382 18.8176 21.2777 19.8464C23.0255 19.3606 24.6956 19.0115 26.2879 18.7992C27.8802 18.5869 29.3998 18.5318 30.8468 18.6338C31.0003 18.0827 31.1159 17.5825 31.1937 17.1335C31.2694 16.6823 31.3533 16.2404 31.4454 15.8076L34.1071 16.4078C33.9925 16.7772 33.8656 17.1753 33.7264 17.6019C33.5872 18.0286 33.4204 18.5236 33.226 19.087C35.9153 19.8423 38.05 21.1304 39.63 22.9513C41.21 24.7721 42 26.8033 42 29.0447C42 32.2251 40.7515 34.988 38.2546 37.3335C35.7577 39.679 32.437 41.2345 28.2926 42ZM13.4492 37.0824C14.4377 37.0824 15.4406 36.8742 16.4578 36.4578C17.475 36.0413 18.615 35.3983 19.8777 34.5287C19.4807 32.5894 19.2054 30.6808 19.0519 28.8028C18.8984 26.9247 18.8217 25.0365 18.8217 23.138C16.1303 24.8344 14.0949 26.595 12.7155 28.42C11.336 30.245 10.6484 32.1056 10.6525 34.002C10.6525 34.8614 10.9185 35.5902 11.4507 36.1883C11.9828 36.7864 12.649 37.0845 13.4492 37.0824ZM22.0943 32.9303C23.8912 31.187 25.4672 29.31 26.822 27.2993C28.179 25.2866 29.3149 23.1207 30.2297 20.8017C28.8155 20.7221 27.3501 20.814 25.8335 21.0773C24.3149 21.3406 22.784 21.7356 21.2408 22.2623C21.1385 23.7851 21.161 25.408 21.3084 27.1309C21.4557 28.8538 21.7197 30.7869 22.0943 32.9303Z\" fill=\"black\"/> <\/svg>", "tab_news": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M7.125 9V35.25C7.125 36.2446 7.52009 37.1984 8.22335 37.9016C8.92661 38.6049 9.88044 39 10.875 39H37.125C38.1196 39 39.0734 38.6049 39.7766 37.9016C40.4799 37.1984 40.875 36.2446 40.875 35.25V16.5H33.375\" stroke=\"black\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/> <path d=\"M7.125 9H33.375V35.25C33.375 36.2446 33.7701 37.1984 34.4734 37.9016C35.1766 38.6049 36.1304 39 37.125 39M25.875 16.5H14.625M25.875 24H18.375\" stroke=\"black\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/> <\/svg>", "tab_right": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:svg=\"http://www.w3.org/2000/svg\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\" xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\" version=\"1.1\" width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" enable-background=\"new 0 0 76.00 76.00\" xml:space=\"preserve\" id=\"svg4\" sodipodi:docname=\"appbar.chevron.right.svg\" inkscape:export-xdpi=\"96\" inkscape:export-ydpi=\"96\" inkscape:version=\"1.0.1 (3bc2e813f5, 2020-09-07)\"><metadata id=\"metadata10\"><rdf:RDF><cc:Work rdf:about=\"\"><dc:format>image/svg+xml<\/dc:format><dc:type rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\" /><dc:title><\/dc:title><\/cc:Work><\/rdf:RDF><\/metadata><defs id=\"defs8\" /><sodipodi:namedview pagecolor=\"#ffffff\" bordercolor=\"#666666\" borderopacity=\"1\" objecttolerance=\"10\" gridtolerance=\"10\" guidetolerance=\"10\" inkscape:pageopacity=\"0\" inkscape:pageshadow=\"2\" inkscape:window-width=\"1914\" inkscape:window-height=\"1004\" id=\"namedview6\" showgrid=\"true\" inkscape:zoom=\"16.8125\" inkscape:cx=\"24\" inkscape:cy=\"24\" inkscape:window-x=\"0\" inkscape:window-y=\"54\" inkscape:window-maximized=\"0\" inkscape:current-layer=\"svg4\" inkscape:document-rotation=\"0\" inkscape:snap-page=\"true\"><inkscape:grid type=\"xygrid\" id=\"grid835\" originx=\"0\" originy=\"0\" /><\/sodipodi:namedview> <path fill=\"#000000\" fill-opacity=\"1\" stroke-width=\"0.205196\" stroke-linejoin=\"round\" d=\"M 29.317521,24.000001 14.166666,40 h 4.106261 L 33.833334,23.999888 18.272927,8.0000003 h -4.106261 z\" id=\"path2\" sodipodi:nodetypes=\"ccccccc\" /> <\/svg>", "tab_series": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> <svg fill=\"#000000\" height=\"800px\" width=\"800px\" version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 64 64\" enable-background=\"new 0 0 64 64\" xml:space=\"preserve\"> <g id=\"Books_1_\" transform=\"translate(32, 32) scale(0.85) translate(-32, -32)\" stroke=\"#000000\" stroke-width=\"0.8\" stroke-linejoin=\"round\"> <path d=\"M62.9994125,39.4741516h-1.9568176c-2.3530006-5.0440025-2.3532982-9.9673023,0-15.0459023h1.9568176 c0.5526848,0,1-0.4477997,1-1c0-0.5522995-0.4473152-1-1-1H25.8977966v-0.7432003h31.9053001c0.5527,0,1-0.4476986,1-1 c0-0.5521984-0.4473-1-1-1h-1.9568024c-2.3532982-5.0436993-2.3522987-9.9664993,0.0003014-15.0463991h1.956501 c0.5527,0,1-0.4477,1-1c0-0.5521998-0.4473-1-1-1H5.2444973c-0.3632998,0-0.6981997,0.1973-0.875,0.5152001 C0.7366974,9.70895,0.7522975,15.7949495,4.414412,21.2431507c0.1855855,0.2763996,0.4970856,0.4418983,0.8300853,0.4418983 h10.1299143v0.7432003h-4.9336147c-0.3632994,0-0.6981993,0.1972008-0.875,0.5151005 C5.9319973,29.4980507,5.9475975,35.58395,9.6106968,41.0322495c0.1856003,0.2763023,0.4971008,0.4419022,0.8301001,0.4419022 h52.5586166c0.5526848,0,1-0.4478035,1-1C63.9994125,39.9218483,63.5520973,39.4741516,62.9994125,39.4741516z M17.3744125,11.6435499h6.5233841v17.3358994l-2.8486004-1.2915001c-0.2636986-0.1191006-0.5625-0.1191006-0.8261986,0 l-2.8485851,1.2915001V11.6435499z M5.7874975,19.6850491c-2.875-4.5765991-2.8574002-9.5087986,0.0537-15.0463991h47.8217964 c-2.0849991,5.0116997-2.0861969,10.0642004-0.0029984,15.0463991H25.8977966v-8.0414991h16.0458984c0.552803,0,1-0.4476995,1-1 c0-0.5522003-0.447197-1-1-1H12.1126976c-0.5528002,0-1,0.4477997-1,1c0,0.5523005,0.4471998,1,1,1h3.261714v8.0414991H5.7874975z M11.0374975,24.4282494h4.3369141v6.1025009c0,0.3398991,0.1727858,0.6562996,0.4580002,0.8402996 c0.2860861,0.1846008,0.6464853,0.2115002,0.9550848,0.0704002l3.8486004-1.7446995l3.8486004,1.7446995 c0.1318989,0.0599995,0.2724991,0.0893002,0.4130993,0.0893002c0.1895008,0,0.3780003-0.0536995,0.5419998-0.1597004 c0.2852001-0.184,0.4580002-0.5004005,0.4580002-0.8402996v-6.1025009h32.9612007 c-2.085701,5.0107002-2.0862007,10.0629997-0.0023994,15.0459023H10.9827976 C8.1077976,34.8974495,8.125412,29.9658508,11.0374975,24.4282494z\"/> <path d=\"M54.1919975,44.3154488h1.9567986c0.5527,0,1-0.4477997,1-1c0-0.5522995-0.4473-1-1-1H3.5901973 c-0.3632998,0-0.6982,0.1972008-0.875,0.5151024c-3.6346998,6.5546989-3.6190999,12.6405983,0.0449002,18.0888977 c0.1866,0.2764015,0.4970999,0.4419022,0.8300998,0.4419022h52.5585976c0.5527,0,1-0.4477997,1-1c0-0.5522995-0.4473-1-1-1 h-1.9567986C51.8389969,54.3168488,51.8387947,49.3940506,54.1919975,44.3154488z M4.1321974,59.361351 c-2.8759999-4.5767021-2.8583999-9.5088005,0.0546999-15.0459023h47.8215141 c-2.0857162,5.0107002-2.0859146,10.0627022-0.0024147,15.0459023H4.1321974z\"/> <\/g> <\/svg>", "tab_stats": "<?xml version=\"1.0\" encoding=\"utf-8\"?> <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> <svg width=\"800px\" height=\"800px\" viewBox=\"0 0 21 21\" xmlns=\"http://www.w3.org/2000/svg\"> <g fill=\"none\" fill-rule=\"evenodd\" stroke=\"#000000\" stroke-linecap=\"round\" stroke-linejoin=\"round\" transform=\"translate(3 3)\"> <path d=\"m.5.5v12c0 1.1045695.8954305 2 2 2h11.5\"/> <path d=\"m3.5 8.5v3\"/> <path d=\"m7.5 5.5v6\"/> <path d=\"m11.5 2.5v9\"/> <\/g> <\/svg>", "tab_tags": "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?> <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> <svg fill=\"#000000\" height=\"800px\" width=\"800px\" version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"-40.24 -40.24 428.57 428.57\" xml:space=\"preserve\"> <g> <g> <g> <path d=\"M260.1,48.65c-22,0-40,18-40,40s18,40,40,40s40-18,40-40S282.1,48.65,260.1,48.65z M260.1,112.65c-13.2,0-24-10.8-24-24 s10.8-24,24-24s24,10.8,24,24S273.3,112.65,260.1,112.65z\"/> <path d=\"M308.1,1.05h-108c-10.8,0-20.8,4-28,11.6L11.7,172.25c-15.6,15.6-15.6,40.8,0,56.4l107.2,106.8 c7.6,7.6,17.6,11.6,28.4,11.6s20.8-4,28.4-11.6l160.4-160.4c7.6-7.2,12-17.2,12-27.6V41.05C348.1,19.05,330.1,1.05,308.1,1.05z M332.1,147.45c0,6-2.4,12-7.2,16l-160.8,160.8c-4.4,4.4-10.4,6.8-16.8,6.8s-12.4-2.4-16.8-6.8L22.9,217.45 c-9.2-9.2-9.2-24.4,0-34l160.4-159.6c4.4-4.4,10.4-6.8,16.8-6.8h108c13.2,0,24,10.8,24,24V147.45z\"/> <\/g> <\/g> <\/g> <\/svg>", "tab_to_be_read": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"><svg height=\"24\" viewBox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.5,3A9.5,9.5 0 0,1 21,12.5A9.5,9.5 0 0,1 11.5,22A9.5,9.5 0 0,1 2,12.5A9.5,9.5 0 0,1 11.5,3M11.5,4A8.5,8.5 0 0,0 3,12.5A8.5,8.5 0 0,0 11.5,21A8.5,8.5 0 0,0 20,12.5A8.5,8.5 0 0,0 11.5,4M11,7H12V12.42L16.7,15.13L16.2,16L11,13V7Z\"/><\/svg>"};
 let lang="en";
 try{const l=localStorage.getItem("koicons-lang");if(l&&UI[l])lang=l}catch(e){}
 const t=(k,v)=>{const s=(UI[lang]&&UI[lang][k])??UI.en[k];return v==null?s:s.replace("{n}",v)};
 const secText=(p,i)=>(SECT[p][lang]||SECT[p].en)[i];
-const labelOf=n=>((LAB[lang]||{})[n])||SUI_LABEL[n]||n;
+const labelOf=n=>n.startsWith("zen:")?((ZLAB[lang]||ZLAB.en)[n.slice(4)]||n.slice(4)):((LAB[lang]||{})[n])||SUI_LABEL[n]||n;
 const refs=[],cardNm={},pickTxt=[],rmTxt=[];
 const $i=id=>document.getElementById(id);
 const cards={};let tab="ko";
@@ -322,8 +997,9 @@ function build(list,pane,strip){
   sec.append(sm);
   const ref={pane,i,a,h2:sm.querySelector("h2"),sub:sm.querySelector(".sub"),tot:sm.querySelector(".tot"),total:0};refs.push(ref);
   const g=$("div","grid");let tot=0;
-  names.forEach(n=>{
-   const pv=ORIG[n]||SUI_PREV[n],lb=SUI_LABEL[n];
+  names.forEach(base=>{
+   const n=pane=="zen"?"zen:"+base:base;
+   const pv=pane=="zen"?(ZEN_PREV[base]||ORIG[base]):(ORIG[n]||SUI_PREV[n]),lb=pane=="zen"?1:SUI_LABEL[n];
    if(!pv&&!lb)return;
    tot++;
    const c=$("div","card");
@@ -335,7 +1011,7 @@ function build(list,pane,strip){
    pair.append(o,ar,nb);
    const meta=$("div","meta");
    const t1=$("div","nm");t1.textContent=labelOf(n);meta.append(t1);cardNm[n]=t1;
-   if(lb){const t2=$("div","fn");t2.textContent=n;meta.append(t2)}
+   if(lb){const t2=$("div","fn");t2.textContent=pane=="zen"?base:n;meta.append(t2)}
    const row=$("div","row");
    const lab=$("label","pick");const lt=$("span");lab.append(lt);pickTxt.push(lt);
    const inp=document.createElement("input");inp.type="file";inp.accept=".svg,.png,image/svg+xml,image/png";
@@ -348,6 +1024,7 @@ function build(list,pane,strip){
     const ext=f.name.toLowerCase().endsWith(".png")?"png":f.name.toLowerCase().endsWith(".svg")?"svg":null;
     if(!ext){alert(t("badfile"));inp.value="";return}
     const bytes=new Uint8Array(await f.arrayBuffer());
+    if(pane=="zen"&&bytes.length>5242880){alert(t("tooBig"));inp.value="";return}
     const url=URL.createObjectURL(new Blob([bytes],{type:ext=="svg"?"image/svg+xml":"image/png"}));
     chosen[n]={ext,bytes,url};
     nb.style.opacity="1";nb.innerHTML="";const im=new Image();im.src=url;im.alt=t("newAlt",n);im.dataset.n=n;nb.append(im);
@@ -363,6 +1040,7 @@ function build(list,pane,strip){
 }
 build(SECTIONS,"ko",false);
 build(SUI_SECTIONS,"sui",true);
+build(ZEN_SECTIONS,"zen",true);
 function toggle(d,g){
  const opening=!d.open||d.classList.contains("closing");
  if(g._a)g._a.cancel();
@@ -381,24 +1059,24 @@ function toggle(d,g){
   g._a.oncancel=done;
  }
 }
-const isSui=n=>n.startsWith("sui_");
+const tabOf=n=>n.startsWith("sui_")?"sui":n.startsWith("zen:")?"zen":"ko";
 const cntTxt=n=>!n?t("none"):n==1?t("one"):t("many",n);
 function upd(){
  document.querySelectorAll("details.sec").forEach(d=>{const c=d.querySelectorAll(".card.on").length;d.querySelector(".n").textContent=c?(c==1?t("chOne"):t("chMany",c)):""});
- const all=Object.keys(chosen),s=all.filter(isSui).length,k=all.length-s;
- [["ko",k],["sui",s]].forEach(([x,n])=>{const b=$i("t-"+x).querySelector(".badge");b.hidden=!n;b.textContent=n});
- const n=tab=="sui"?s:k;
+ const cn={ko:0,sui:0,zen:0};Object.keys(chosen).forEach(k=>cn[tabOf(k)]++);
+ ["ko","sui","zen"].forEach(x=>{const n=cn[x];const b=$i("t-"+x).querySelector(".badge");b.hidden=!n;b.textContent=n});
+ const n=cn[tab];$i("sec").hidden=tab=="zen";
  $i("prim").disabled=!n;$i("clr").hidden=!n;
- $i("prim").textContent=t(tab=="sui"?"genSui":"genKo");
+ $i("prim").textContent=t(tab=="ko"?"genKo":"genSui");
  $i("cnt").textContent=cntTxt(n);
 }
 function setTab(t){
  tab=t;
- ["ko","sui"].forEach(x=>{$i("pane-"+x).hidden=x!=t;$i("nav-"+x).hidden=x!=t;$i("t-"+x).setAttribute("aria-selected",x==t)});
+ ["ko","sui","zen"].forEach(x=>{$i("pane-"+x).hidden=x!=t;$i("nav-"+x).hidden=x!=t;$i("t-"+x).setAttribute("aria-selected",x==t)});
  window.scrollTo(0,0);upd();
 }
 document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>setTab(b.dataset.tab));
-$i("clr").onclick=()=>Object.keys(chosen).filter(n=>isSui(n)==(tab=="sui")).forEach(n=>cards[n].click());
+$i("clr").onclick=()=>Object.keys(chosen).filter(n=>tabOf(n)==tab).forEach(n=>cards[n].click());
 function applyLang(){
  document.documentElement.lang=lang;document.title=t("title");
  document.querySelectorAll("[data-i]").forEach(e=>e.innerHTML=t(e.dataset.i));
@@ -447,9 +1125,17 @@ function suiPack(files,desc,fixed){
  const lua='return {\n  name = "'+nm+'",\n  version = "1.0",\n  description = "'+desc+'",\n}\n';
  dl([{name:nm+"/pack.lua",data:enc.encode(lua)},...files.map(f=>({name:nm+"/"+f.name,data:f.data}))],nm+".zip");
 }
-const mine=()=>Object.entries(chosen).filter(([n])=>isSui(n)==(tab=="sui"));
+function zenPack(files){
+ const name=($i("zpackname").value.trim()||"My Pack").slice(0,40);
+ const id=name.toLowerCase().replace(/[^a-z0-9._-]+/g,"-").replace(/^[^a-z0-9]+/,"").replace(/-+$/,"")||"my-pack";
+ const enc=new TextEncoder();
+ const json=JSON.stringify({schema_version:1,id,name,version:"1.0.0"},null,2)+"\n";
+ dl([{name:id+"/pack.json",data:enc.encode(json)},...files.map(f=>({name:id+"/"+f.name,data:f.data}))],id+".zip");
+}
+const mine=()=>Object.entries(chosen).filter(([n])=>tabOf(n)==tab);
 $i("prim").onclick=()=>{
  if(tab=="ko")dl(mine().map(([n,v])=>({name:"koreader/icons/"+n+"."+v.ext,data:v.bytes})),"koreader-icons.zip");
+ else if(tab=="zen")zenPack(mine().map(([n,v])=>({name:n.slice(4)+"."+v.ext,data:v.bytes})));
  else suiPack(mine().map(([n,v])=>({name:n+"."+v.ext,data:v.bytes})),"Generated by KOReader Icon Customizer");
 };
 $i("sec").onclick=()=>{
